@@ -528,6 +528,17 @@ a.info__item:hover { border-color: var(--cyan); }
 .chat__go { width: 18px; height: 18px; margin-left: auto; color: var(--text-muted); transition: transform .2s, color .2s; }
 .chat__opt:hover .chat__go { transform: translate(2px,-2px); color: var(--cyan); }
 
+/* Footer variant: a text line instead of a card */
+.chat--footer .chat__toggle {
+  display: inline-flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; width: auto;
+  padding: 0; border: 0; background: none; color: var(--text); text-align: left;
+}
+.chat--footer .chat__toggle:hover, .chat--footer .chat__toggle[aria-expanded="true"] { color: var(--cyan); }
+.chat--footer .chat__toggle small { width: 100%; font-size: .78rem; color: var(--text-muted); }
+.chat--footer .chat__chev { width: 16px; height: 16px; margin-left: 0; }
+.chat--footer .chat__menu { right: auto; min-width: 250px; }
+.footer__contact .chat__badge svg { color: #fff; margin-top: 0; width: 20px; height: 20px; }
+
 .next { margin-top: 14px; padding: 26px; border-radius: var(--radius); background: linear-gradient(160deg, rgba(76,110,245,.2), rgba(76,110,245,.04)); border: 1px solid rgba(76,110,245,.35); }
 .next h3 { font-size: 1.1rem; margin-bottom: 16px; }
 
