@@ -587,6 +587,7 @@ a.info__item:hover { border-color: var(--cyan); }
 .story__phase { font-family: var(--font-head); font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--cyan); margin-bottom: 26px; }
 .merge { display: inline-flex; align-items: baseline; font-family: var(--font-head); font-weight: 700; font-size: 1.6rem; color: var(--heading); cursor: pointer; background: none; border: 0; padding: 0; }
 .merge span { display: inline-block; overflow: hidden; white-space: pre; max-width: 3em; transition: max-width .7s cubic-bezier(.6,0,.2,1), opacity .5s, color .5s; }
+.merge .keep, .merge .keep2 { max-width: none; overflow: visible; } /* kept letters are never clipped */
 .merge .plus { max-width: 2.4em; color: var(--blue-300); }
 .merge .drop { color: var(--text-muted); }
 .merge.is-merged .drop { max-width: 0; opacity: 0; }
