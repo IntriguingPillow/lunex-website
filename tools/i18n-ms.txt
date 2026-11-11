@@ -449,7 +449,7 @@ Tap to chat on WhatsApp or Telegram|||Ketik untuk berbual di WhatsApp atau Teleg
 Office|||Pejabat
 Visits by appointment · Open in Google Maps|||Lawatan melalui temu janji · Buka di Google Maps
 Business hours|||Waktu perniagaan
-Mon – Fri, **:** – **:**|||Isn – Jum, **:** – **:**
+Mon – Fri, 9:00 am – 6:00 pm|||Isnin – Jumaat, 9:00 pagi – 6:00 petang
 Malaysia time (GMT+8)|||Waktu Malaysia (GMT+8)
 What happens next|||Apa yang berlaku seterusnya
 We read your message|||Kami membaca mesej anda
