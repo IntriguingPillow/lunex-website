@@ -586,7 +586,7 @@ a.info__item:hover { border-color: var(--cyan); }
 .story__moon { width: 170px; margin-bottom: 14px; filter: drop-shadow(0 0 30px rgba(76,110,245,.35)); }
 .story__phase { font-family: var(--font-head); font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--cyan); margin-bottom: 26px; }
 .merge { display: inline-flex; align-items: baseline; font-family: var(--font-head); font-weight: 700; font-size: 1.6rem; color: var(--heading); cursor: pointer; background: none; border: 0; padding: 0; }
-.merge span { display: inline-block; overflow: hidden; white-space: pre; max-width: 1.2em; transition: max-width .7s cubic-bezier(.6,0,.2,1), opacity .5s, color .5s; }
+.merge span { display: inline-block; overflow: hidden; white-space: pre; max-width: 3em; transition: max-width .7s cubic-bezier(.6,0,.2,1), opacity .5s, color .5s; }
 .merge .plus { max-width: 2.4em; color: var(--blue-300); }
 .merge .drop { color: var(--text-muted); }
 .merge.is-merged .drop { max-width: 0; opacity: 0; }
