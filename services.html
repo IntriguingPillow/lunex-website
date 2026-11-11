@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Lunex Multi-Cloud Partner</title>
+  <meta name="description" content="Account setup, MYR billing, architecture advice, migration, cost and security reviews, and local support for AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud and BytePlus.">
+  <meta name="theme-color" content="#0a1430">
+  <meta property="og:title" content="Services | Lunex">
+  <meta property="og:description" content="Everything around your cloud, handled by one Malaysian team.">
+  <meta property="og:image" content="assets/img/lunex-icon-512.png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function(d){try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches){var s=sessionStorage;if(s.getItem("lx-trans"))d.classList.add("page-entering");else if(!s.getItem("lx-intro"))d.classList.add("intro-pending");}}catch(e){}setTimeout(function(){d.classList.remove("page-entering","intro-pending")},3000)})(document.documentElement)</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Floating header ============ -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="nav__logo" aria-label="Lunex home">
+          <img src="assets/img/lunex-logo-white.svg" alt="Lunex" width="99" height="34">
+        </a>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="services.html">Services</a></li>
+          <li><a class="nav__link" href="about.html">About Us</a></li>
+          <li class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Contact Us</a></li>
+        </ul>
+        <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Page hero ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker reveal">Services</p>
+        <h1 class="reveal d1">Everything around your cloud, <span class="glow-text">handled.</span></h1>
+        <p class="lead reveal d2">The cloud providers give you the servers. Lunex takes care of the rest: accounts, bills, design, moves, check-ups and the people you call when something breaks.</p>
+        <nav class="jump reveal d3" aria-label="Jump to a service">
+          <a href="#account">Account setup</a>
+          <a href="#billing">Billing in MYR</a>
+          <a href="#consulting">Architecture advice</a>
+          <a href="#migration">Migration</a>
+          <a href="#guard">Cost &amp; security</a>
+          <a href="#support">Support</a>
+          <a href="#partners">Our clouds</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ============ Cloud matchmaker ============ -->
+    <section class="section" style="padding-bottom:0">
+      <div class="container">
+        <div class="match reveal" data-match>
+          <div class="match__intro">
+            <p class="kicker">Cloud matchmaker</p>
+            <h2>Not sure which cloud fits? Ask the moon.</h2>
+            <p>Answer three quick questions and we'll suggest where to start. Each answer fills in a bit more of the moon.</p>
+            <div class="match__steps" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+
+          <div class="match__panel" aria-live="polite">
+            <div class="match__q">
+              <p class="match__count">Question 1 of 3</p>
+              <h3>What are you building?</h3>
+              <div class="match__opts">
+                <button class="match__opt" type="button" data-value="web" data-label="a website or online store">Website or online store<small>Company site, e-commerce, booking</small></button>
+                <button class="match__opt" type="button" data-value="live" data-label="a game or live app">Game or live app<small>Streaming, chat, multiplayer</small></button>
+                <button class="match__opt" type="button" data-value="data" data-label="a data or AI project">Data or AI project<small>Analytics, dashboards, machine learning</small></button>
+                <button class="match__opt" type="button" data-value="biz" data-label="your business systems">Business systems<small>ERP, internal tools, file servers</small></button>
+              </div>
+            </div>
+            <div class="match__q" hidden>
+              <p class="match__count">Question 2 of 3</p>
+              <h3>Where are most of your users?</h3>
+              <div class="match__opts">
+                <button class="match__opt" type="button" data-value="sea" data-label="in Malaysia and Southeast Asia">Malaysia &amp; Southeast Asia<small>Local and regional customers</small></button>
+                <button class="match__opt" type="button" data-value="china" data-label="in China">China<small>Mainland Chinese users</small></button>
+                <button class="match__opt" type="button" data-value="global" data-label="all over the world">All over the world<small>Global audience</small></button>
+              </div>
+            </div>
+            <div class="match__q" hidden>
+              <p class="match__count">Question 3 of 3</p>
+              <h3>What matters most to you?</h3>
+              <div class="match__opts">
+                <button class="match__opt" type="button" data-value="cost" data-label="cost">Keeping costs low<small>Best value for the budget</small></button>
+                <button class="match__opt" type="button" data-value="easy" data-label="ease">Easy to manage<small>Small team, simple setup</small></button>
+                <button class="match__opt" type="button" data-value="tech" data-label="features">Specific technology<small>AI, video, special services</small></button>
+                <button class="match__opt" type="button" data-value="hybrid" data-label="hybrid">Works with our own servers<small>Hybrid setup or strict rules</small></button>
+              </div>
+            </div>
+            <div class="match__result" hidden></div>
+            <button class="match__back" type="button" hidden>&larr; Back</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Services detail ============ -->
+    <section class="section">
+      <div class="container svc-layout">
+        <aside class="svc-nav" aria-label="Services index">
+          <p>On this page</p>
+          <a href="#account"><small>01</small>Account setup</a>
+          <a href="#billing"><small>02</small>Billing in MYR</a>
+          <a href="#consulting"><small>03</small>Architecture advice</a>
+          <a href="#migration"><small>04</small>Migration</a>
+          <a href="#guard"><small>05</small>Cost &amp; security</a>
+          <a href="#support"><small>06</small>Support</a>
+        </aside>
+
+        <div>
+          <!-- 01 -->
+          <article class="svc" id="account">
+            <div class="svc__num" aria-hidden="true">01</div>
+            <h2>Account setup &amp; transfer</h2>
+            <p>Opening a cloud account sounds simple until verification stalls, the wrong person ends up as the owner, or everyone shares one admin login. We open new accounts under our partner programmes, or move your existing ones under Lunex, and set them up properly from day one.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>What you get</h3>
+                <ul class="ticks">
+                  <li>New accounts on any of the six clouds</li>
+                  <li>Transfer of existing accounts with no downtime</li>
+                  <li>Separate logins and roles for each team member</li>
+                  <li>Security baseline: MFA, alerts and audit logging</li>
+                  <li>Access to partner-tier programmes and credits where available</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>How it runs</h3>
+                <ol class="flow">
+                  <li><strong>Tell us who needs access</strong><span>Company details and your team list.</span></li>
+                  <li><strong>We open or transfer</strong><span>We handle the provider's paperwork and checks.</span></li>
+                  <li><strong>Hand-over</strong><span>You get the logins, plus a short guide on who can do what.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=New%20account%20setup">Ask us about account setup <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- 02 -->
+          <article class="svc" id="billing">
+            <div class="svc__num" aria-hidden="true">02</div>
+            <h2>Billing &amp; top-up in Ringgit</h2>
+            <p>Global providers usually bill in US dollars on a credit card. That means exchange-rate swings, card limits, and services paused when a payment fails. With Lunex, every cloud you use is combined into one local invoice.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>What you get</h3>
+                <ul class="ticks">
+                  <li>One monthly MYR invoice covering every cloud</li>
+                  <li>Payment by local bank transfer</li>
+                  <li>Prepaid top-up option for tighter budgets</li>
+                  <li>Monthly spend report, broken down by project</li>
+                  <li>Budget alerts before costs run over</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>How it runs</h3>
+                <ol class="flow">
+                  <li><strong>Link your accounts</strong><span>Your cloud accounts are billed through Lunex.</span></li>
+                  <li><strong>Use as normal</strong><span>Nothing changes for your engineers.</span></li>
+                  <li><strong>Pay one invoice</strong><span>In MYR each month, with a clear usage report.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=Billing%20in%20MYR%20%2F%20transfer%20accounts">Ask us about billing in Ringgit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- 03 -->
+          <article class="svc" id="consulting">
+            <div class="svc__num" aria-hidden="true">03</div>
+            <h2>Architecture advice</h2>
+            <p>Each provider will tell you its own cloud is best. We work with all six, so our only goal is a setup that suits your workload, your users and your budget, even if that means mixing more than one cloud.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>What you get</h3>
+                <ul class="ticks">
+                  <li>Review of your current setup or new idea</li>
+                  <li>Side-by-side comparison of suitable clouds and regions</li>
+                  <li>Architecture diagram you can share with your team</li>
+                  <li>Monthly cost estimate in MYR</li>
+                  <li>Recommendations for scaling, backups and uptime</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>How it runs</h3>
+                <ol class="flow">
+                  <li><strong>Discovery session</strong><span>We learn what you're building and for whom.</span></li>
+                  <li><strong>Options &amp; trade-offs</strong><span>We show you two or three paths, with honest pros and cons.</span></li>
+                  <li><strong>Final design</strong><span>A clear plan you can build yourself, or have us help with.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=Architecture%20advice">Ask us for architecture advice <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- 04 -->
+          <article class="svc" id="migration">
+            <div class="svc__num" aria-hidden="true">04</div>
+            <h2>Migration</h2>
+            <p>Moving from office servers to the cloud, or from one cloud to another, is like moving house: most of the risk is in the planning. We map everything first, rehearse on a copy, and switch over when it suits your business.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>What you get</h3>
+                <ul class="ticks">
+                  <li>Inventory of servers, databases and dependencies</li>
+                  <li>Step-by-step migration and rollback plan</li>
+                  <li>Test migration before the real one</li>
+                  <li>Data and application transfer</li>
+                  <li>Support during and after the switch-over</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>How it runs</h3>
+                <ol class="flow">
+                  <li><strong>Assess</strong><span>What moves, what stays and what gets replaced.</span></li>
+                  <li><strong>Rehearse</strong><span>A full test run on a copy of your system.</span></li>
+                  <li><strong>Switch over</strong><span>Planned around your quietest hours.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=Migration">Ask us about migration <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- 05 -->
+          <article class="svc" id="guard">
+            <div class="svc__num" aria-hidden="true">05</div>
+            <h2>Cost &amp; security check-ups</h2>
+            <p>Cloud bills tend to grow quietly, and small settings left open can turn into big problems. We review your accounts regularly and explain what we find in plain language, ranked by what matters most.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>What you get</h3>
+                <ul class="ticks">
+                  <li>Idle and oversized resources flagged</li>
+                  <li>Savings options such as reserved capacity and right-sizing</li>
+                  <li>Checks for public storage, open ports and weak access</li>
+                  <li>Backup and recovery review</li>
+                  <li>Short written report with a prioritised to-do list</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>How it runs</h3>
+                <ol class="flow">
+                  <li><strong>Read-only access</strong><span>We look, and change nothing without your approval.</span></li>
+                  <li><strong>Review</strong><span>Cost and security checks across your accounts.</span></li>
+                  <li><strong>Walk-through</strong><span>A call to go through the findings, then we help fix them if you want.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=Cost%20%26%20security%20check-up">Book a cost &amp; security check-up <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- 06 -->
+          <article class="svc" id="support">
+            <div class="svc__num" aria-hidden="true">06</div>
+            <h2>Local technical support</h2>
+            <p>When something goes wrong, you want someone who already knows your setup, not a ticket number. Message our team directly. If the problem is on the provider's side, we escalate it through our partner channel and keep you updated.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>What you get</h3>
+                <ul class="ticks">
+                  <li>Support by email and WhatsApp</li>
+                  <li>A named account manager</li>
+                  <li>Escalation to the cloud provider on your behalf</li>
+                  <li>Help during incidents and outages</li>
+                  <li>Advice on everyday "how do I…" questions</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>How it runs</h3>
+                <ol class="flow">
+                  <li><strong>Reach out</strong><span>Message the channel you prefer.</span></li>
+                  <li><strong>We investigate</strong><span>Using what we already know about your setup.</span></li>
+                  <li><strong>Resolve or escalate</strong><span>Fixed by us, or pushed to the provider with full context.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=Technical%20support">Get support from our team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Cloud partners ============ -->
+    <section class="section section--deep" id="partners">
+      <div class="container">
+        <p class="kicker">Our clouds</p>
+        <h2 class="h-lg">Six platforms, each with<br>its own strengths.</h2>
+        <p class="lead">Every service above works on all six. Here's where each cloud tends to shine. We'll help you pick one, or combine several.</p>
+
+        <div class="planets">
+          <article data-spotlight class="planet reveal" style="--c:#ff9900" id="aws">
+            <div class="planet__orb"><img src="assets/img/clouds/aws.svg" alt="AWS logo"></div>
+            <h3>AWS</h3>
+            <p class="planet__known">The broadest catalogue of services</p>
+            <p>A mature, wide-ranging platform with a service for almost every need, from simple websites to large enterprise systems.</p>
+            <ul class="mc__chips"><li>Web &amp; apps</li><li>Enterprise</li><li>Startups</li></ul>
+            <a class="inline-link" href="contact.html?cloud=AWS">Talk to us about AWS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article data-spotlight class="planet reveal d1" style="--c:#4285f4" id="google-cloud">
+            <div class="planet__orb"><img src="assets/img/clouds/google-cloud.svg" alt="Google Cloud logo"></div>
+            <h3>Google Cloud</h3>
+            <p class="planet__known">Data, analytics &amp; AI</p>
+            <p>Strong at handling large amounts of data and at machine learning, with tools that work well alongside Google Workspace.</p>
+            <ul class="mc__chips"><li>Analytics</li><li>AI / ML</li><li>Containers</li></ul>
+            <a class="inline-link" href="contact.html?cloud=Google%20Cloud">Talk to us about Google Cloud <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article data-spotlight class="planet reveal d2" style="--c:#ff6a00" id="alibaba-cloud">
+            <div class="planet__orb"><img src="assets/img/clouds/alibaba-cloud.svg" alt="Alibaba Cloud logo"></div>
+            <h3>Alibaba Cloud</h3>
+            <p class="planet__known">Asia &amp; China connectivity</p>
+            <p>A leading choice for businesses serving users in Asia, especially those that need to reach or operate in China.</p>
+            <ul class="mc__chips"><li>E-commerce</li><li>China reach</li><li>CDN</li></ul>
+            <a class="inline-link" href="contact.html?cloud=Alibaba%20Cloud">Talk to us about Alibaba Cloud <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article data-spotlight class="planet reveal" style="--c:#2f7cf6" id="tencent-cloud">
+            <div class="planet__orb"><img src="assets/img/clouds/tencent-cloud.svg" alt="Tencent Cloud logo" style="transform:scale(1.55)"></div>
+            <h3>Tencent Cloud</h3>
+            <p class="planet__known">Gaming, media &amp; real-time</p>
+            <p>Built on experience running large games and social apps. Well suited to live streaming, video and real-time communication.</p>
+            <ul class="mc__chips"><li>Gaming</li><li>Live video</li><li>Real-time chat</li></ul>
+            <a class="inline-link" href="contact.html?cloud=Tencent%20Cloud">Talk to us about Tencent Cloud <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article data-spotlight class="planet reveal d1" style="--c:#e60012" id="huawei-cloud">
+            <div class="planet__orb"><img src="assets/img/clouds/huawei-cloud.svg" alt="Huawei Cloud logo" style="height:52%"></div>
+            <h3>Huawei Cloud</h3>
+            <p class="planet__known">Enterprise &amp; hybrid</p>
+            <p>Popular with enterprises and the public sector that need hybrid setups combining their own data centres with the cloud.</p>
+            <ul class="mc__chips"><li>Hybrid cloud</li><li>Enterprise</li><li>Public sector</li></ul>
+            <a class="inline-link" href="contact.html?cloud=Huawei%20Cloud">Talk to us about Huawei Cloud <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article data-spotlight class="planet reveal d2" style="--c:#22d3ee" id="byteplus">
+            <div class="planet__orb"><img src="assets/img/clouds/byteplus.png" alt="BytePlus logo" style="height:62%"></div>
+            <h3>BytePlus</h3>
+            <p class="planet__known">Recommendation &amp; media tech</p>
+            <p>Brings ByteDance's technology to businesses: personalised recommendations, video tools and AI for consumer apps.</p>
+            <ul class="mc__chips"><li>Recommendations</li><li>Video</li><li>Consumer apps</li></ul>
+            <a class="inline-link" href="contact.html?cloud=BytePlus">Talk to us about BytePlus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section">
+      <div class="container">
+        <p class="kicker">Good questions</p>
+        <h2 class="h-lg" style="margin-bottom:40px">Asked often, answered plainly.</h2>
+        <div class="faq">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-1">Is it more expensive than buying direct?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-1"><p>You pay for cloud usage based on the provider's own pricing. Any Lunex service fees are listed clearly in your quote before you commit, so there are no hidden charges.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-2">Can you take over the cloud accounts we already have?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-2"><p>Yes. In most cases existing accounts can be moved under Lunex for billing and support without touching your servers, data or settings. Your systems keep running throughout.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-3">Do we have to use all six clouds?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-3"><p>Not at all. Most customers use one or two. Having all six available simply means we can recommend whatever fits best, and add another later if your needs change.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-4">Who owns our data and accounts?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-4"><p>You do. Lunex handles billing and helps manage your accounts, but your data, applications and settings always belong to you.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-5">Is there a minimum spend?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-5"><p>Talking to us costs nothing. Some services or provider programmes have their own requirements, and we'll tell you about any of them up front, before you sign anything.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-6">How do we reach support?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-6"><p>By email or WhatsApp, straight to our Malaysian team. You'll also have a named account manager who knows your setup.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA band ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="band reveal">
+          <div>
+            <h2>Not sure which service you need?</h2>
+            <p>Tell us what's going on with your cloud. We'll point you to the right place, even if that's nowhere.</p>
+          </div>
+          <div class="band__actions">
+            <a class="btn btn--primary" href="contact.html">
+              Get a free consultation
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <!-- Placeholder contact details use ** for values still to be confirmed. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/lunex-logo-white.svg" alt="Lunex" width="104" height="36">
+          <p>Your local partner for AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud and BytePlus.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Clouds</h4>
+          <ul class="footer__links">
+            <li><a href="services.html#aws">AWS</a></li>
+            <li><a href="services.html#google-cloud">Google Cloud</a></li>
+            <li><a href="services.html#alibaba-cloud">Alibaba Cloud</a></li>
+            <li><a href="services.html#tencent-cloud">Tencent Cloud</a></li>
+            <li><a href="services.html#huawei-cloud">Huawei Cloud</a></li>
+            <li><a href="services.html#byteplus">BytePlus</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach us</h4>
+          <ul class="footer__contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:********@******.com">********@******.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+601********">+601********</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Kuala%20Lumpur%2C%20Malaysia" target="_blank" rel="noopener">**, Jalan ****, ***** Kuala Lumpur, Malaysia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2026</span> Lunex. All rights reserved.</span>
+        <span>SSM 202601023276 (1685373-X)</span>
+      </div>
+    </div>
+    <div class="footer__word" aria-hidden="true">lunex</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

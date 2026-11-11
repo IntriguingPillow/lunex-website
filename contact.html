@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Lunex</title>
+  <meta name="description" content="Talk to Lunex about AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud or BytePlus. Free consultation, reply within one business day.">
+  <meta name="theme-color" content="#0a1430">
+  <meta property="og:title" content="Contact Us | Lunex">
+  <meta property="og:description" content="Let's talk cloud. Free consultation with a local team.">
+  <meta property="og:image" content="assets/img/lunex-icon-512.png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function(d){try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches){var s=sessionStorage;if(s.getItem("lx-trans"))d.classList.add("page-entering");else if(!s.getItem("lx-intro"))d.classList.add("intro-pending");}}catch(e){}setTimeout(function(){d.classList.remove("page-entering","intro-pending")},3000)})(document.documentElement)</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Floating header ============ -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="nav__logo" aria-label="Lunex home">
+          <img src="assets/img/lunex-logo-white.svg" alt="Lunex" width="99" height="34">
+        </a>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="services.html">Services</a></li>
+          <li><a class="nav__link" href="about.html">About Us</a></li>
+          <li class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Contact Us</a></li>
+        </ul>
+        <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Page hero ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker reveal">Contact us</p>
+        <h1 class="reveal d1">Let's talk <span class="glow-text">cloud.</span></h1>
+        <p class="lead reveal d2">Questions, quotes or a quick sense-check of your current setup: send us a note and a real person will reply within one business day.</p>
+      </div>
+    </section>
+
+    <!-- ============ Form + details ============ -->
+    <!-- Placeholder contact details use ** for values still to be confirmed. -->
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="form-card reveal">
+          <div class="form-head">
+            <div>
+              <h2>Send us a message</h2>
+              <p style="color:var(--text-muted)">Fields marked <span style="color:var(--cyan)">*</span> are required. Fill them in to fill the moon.</p>
+            </div>
+            <div class="form-moon" data-form-moon aria-hidden="true">
+              <svg class="moon-svg" viewBox="0 0 100 100">
+                <defs><radialGradient id="formMoonLit" cx="60%" cy="35%" r="75%"><stop offset="0" stop-color="#e3e9ff"/><stop offset=".55" stop-color="#91a7ff"/><stop offset="1" stop-color="#4c6ef5"/></radialGradient></defs>
+                <circle class="moon-base" cx="50" cy="50" r="46"/>
+                <path class="moon-lit" fill="url(#formMoonLit)" d=""/>
+              </svg>
+              <small>0% in orbit</small>
+            </div>
+          </div>
+
+          <p class="prefill-note" data-prefill-note role="status" hidden></p>
+
+          <div class="quick" role="group" aria-label="Quick topics">
+            <p class="quick__label">Quick start: what's on your mind?</p>
+            <button type="button" data-topic="Billing in MYR / transfer accounts">Pay in Ringgit</button>
+            <button type="button" data-topic="Migration">Move to the cloud</button>
+            <button type="button" data-topic="Architecture advice">Which cloud?</button>
+            <button type="button" data-topic="Cost &amp; security check-up">Lower my bill</button>
+            <button type="button" data-topic="Technical support">I need help now</button>
+          </div>
+
+          <form class="form" data-contact-form novalidate>
+            <div class="form__group">
+              <label for="name">Full name <span class="req">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <span class="form__error" data-error-for="name" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" autocomplete="organization">
+              <span class="form__error" data-error-for="company" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="email">Work email <span class="req">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <span class="form__error" data-error-for="email" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+60">
+              <span class="form__error" data-error-for="phone" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="cloud">Cloud you're interested in</label>
+              <select id="cloud" name="cloud">
+                <option value="">Not sure yet</option>
+                <option>AWS</option>
+                <option>Google Cloud</option>
+                <option>Alibaba Cloud</option>
+                <option>Tencent Cloud</option>
+                <option>Huawei Cloud</option>
+                <option>BytePlus</option>
+                <option>More than one</option>
+              </select>
+              <span class="form__error" data-error-for="cloud" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="topic">What do you need help with? <span class="req">*</span></label>
+              <select id="topic" name="topic" required>
+                <option value="">Choose one</option>
+                <option>New account setup</option>
+                <option>Billing in MYR / transfer accounts</option>
+                <option>Architecture advice</option>
+                <option>Migration</option>
+                <option>Cost &amp; security check-up</option>
+                <option>Technical support</option>
+                <option>Something else</option>
+              </select>
+              <span class="form__error" data-error-for="topic" aria-live="polite"></span>
+            </div>
+            <div class="form__group form__group--full">
+              <label for="message">Tell us a bit more <span class="req">*</span></label>
+              <textarea id="message" name="message" required placeholder="What are you running today, and what would you like to change?"></textarea>
+              <span class="form__error" data-error-for="message" aria-live="polite"></span>
+              <span class="msg-count" data-msg-count aria-hidden="true">0 characters</span>
+            </div>
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">
+                Send message
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </button>
+            </div>
+            <p class="form__note">We only use your details to reply to this enquiry, in line with Malaysia's Personal Data Protection Act (PDPA).</p>
+            <div class="form__success" role="status" tabindex="-1">Thank you. Your message is on its way, and we'll reply within one business day.</div>
+          </form>
+        </div>
+
+        <aside class="info">
+          <div class="sky reveal" data-kl-sky data-period="night" role="img" aria-label="Current time in Kuala Lumpur">
+            <div class="sky__stars"></div>
+            <div class="sky__arc"></div>
+            <div class="sky__body is-moon" style="left:50%;top:30%"></div>
+            <div class="sky__ground"></div>
+            <span class="sky__label">Right now at Lunex</span>
+            <div class="sky__text">
+              <div class="sky__time">--:--</div>
+              <div class="sky__meta">Kuala Lumpur, Malaysia</div>
+            </div>
+          </div>
+          <a data-spotlight class="info__item reveal" href="mailto:********@******.com">
+            <span class="info__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><h3>Email</h3><p>********@******.com<small>Best for quotes and detailed questions</small></p></div>
+          </a>
+          <a data-spotlight class="info__item reveal d1" href="https://wa.me/601********" target="_blank" rel="noopener">
+            <span class="info__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+            <div><h3>WhatsApp / Phone</h3><p>+601********<small>Quick questions and urgent help</small></p></div>
+          </a>
+          <a data-spotlight class="info__item reveal d2" href="https://www.google.com/maps/search/?api=1&amp;query=Kuala%20Lumpur%2C%20Malaysia" target="_blank" rel="noopener">
+            <span class="info__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><h3>Office</h3><p>**, Jalan ****,<br>***** Kuala Lumpur, Malaysia<small>Visits by appointment · Open in Google Maps</small></p></div>
+          </a>
+          <div class="info__item reveal d3">
+            <span class="info__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><h3>Business hours</h3><p>Mon – Fri, **:** – **:**<small>Malaysia time (GMT+8)</small></p></div>
+          </div>
+
+          <div class="next reveal">
+            <h3>What happens next</h3>
+            <ol class="flow">
+              <li><strong>We read your message</strong><span>A real person, not an auto-reply.</span></li>
+              <li><strong>We reply within one business day</strong><span>Usually with a few questions, or a time for a call.</span></li>
+              <li><strong>Free consultation</strong><span>Honest advice, and a quote only if you want one.</span></li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/lunex-logo-white.svg" alt="Lunex" width="104" height="36">
+          <p>Your local partner for AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud and BytePlus.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Clouds</h4>
+          <ul class="footer__links">
+            <li><a href="services.html#aws">AWS</a></li>
+            <li><a href="services.html#google-cloud">Google Cloud</a></li>
+            <li><a href="services.html#alibaba-cloud">Alibaba Cloud</a></li>
+            <li><a href="services.html#tencent-cloud">Tencent Cloud</a></li>
+            <li><a href="services.html#huawei-cloud">Huawei Cloud</a></li>
+            <li><a href="services.html#byteplus">BytePlus</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach us</h4>
+          <ul class="footer__contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:********@******.com">********@******.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+601********">+601********</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Kuala%20Lumpur%2C%20Malaysia" target="_blank" rel="noopener">**, Jalan ****, ***** Kuala Lumpur, Malaysia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2026</span> Lunex. All rights reserved.</span>
+        <span>SSM 202601023276 (1685373-X)</span>
+      </div>
+    </div>
+    <div class="footer__word" aria-hidden="true">lunex</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
