@@ -33,7 +33,7 @@ assets/img/clouds/      cloud partner logos
 
 ## To do before launch
 
-- Replace the `**` placeholders (address, business hours). Email and phone are set:
-  support@lunexsb.com, +60 11-1879 1260
+- Replace the `**` placeholder for business hours. Email, phone and address are set:
+  support@lunexsb.com, +60 11-1879 1260, 5, Lorong Peel, Maluri, 55100 Cheras, Wilayah Persekutuan Kuala Lumpur
 - Replace the cloud logos with official files from each partner portal.
 - Connect the contact form to a form service (for example Formspree) if it should send emails.
