@@ -481,6 +481,38 @@
     }
   });
 
+  /* ---------- WhatsApp / Telegram chooser (contact page) ---------- */
+  document.querySelectorAll("[data-chat]").forEach(function (chat) {
+    var btn = chat.querySelector(".chat__toggle");
+    var menu = chat.querySelector(".chat__menu");
+    var opts = Array.prototype.slice.call(menu.querySelectorAll(".chat__opt"));
+    function open(focusFirst) {
+      menu.hidden = false;
+      chat.classList.add("is-open");
+      btn.setAttribute("aria-expanded", "true");
+      if (focusFirst && opts[0]) opts[0].focus();
+    }
+    function close(returnFocus) {
+      menu.hidden = true;
+      chat.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+      if (returnFocus) btn.focus();
+    }
+    btn.addEventListener("click", function (e) {
+      // keyboard "click" (Enter/Space) has detail 0 → move focus into the menu
+      if (menu.hidden) open(e.detail === 0); else close(false);
+    });
+    document.addEventListener("click", function (e) { if (!menu.hidden && !chat.contains(e.target)) close(false); });
+    chat.addEventListener("keydown", function (e) {
+      if (menu.hidden) return;
+      var i = opts.indexOf(document.activeElement);
+      if (e.key === "Escape") { e.preventDefault(); close(true); }
+      else if (e.key === "ArrowDown") { e.preventDefault(); opts[(i + 1) % opts.length].focus(); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); opts[(i - 1 + opts.length) % opts.length].focus(); }
+    });
+    opts.forEach(function (o) { o.addEventListener("click", function () { close(false); }); });
+  });
+
   /* ---------- Mouse-follow spotlight on cards ---------- */
   if (window.matchMedia("(hover: hover)").matches) {
     document.querySelectorAll("[data-spotlight]").forEach(function (el) {
