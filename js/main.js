@@ -434,6 +434,27 @@
         firstInvalid.focus();
         return;
       }
+      /* Open the visitor's own email app with the enquiry ready to send
+         to Lunex. (No server needed; they just press Send.) */
+      var val = function (id) { var el = form.querySelector("#" + id); return el ? el.value.trim() : ""; };
+      var lines = [
+        "Name: " + val("name"),
+        "Company: " + (val("company") || "-"),
+        "Email: " + val("email"),
+        "Phone / WhatsApp: " + (val("phone") || "-"),
+        "Cloud: " + (val("cloud") || "Not sure yet"),
+        "Topic: " + val("topic"),
+        "",
+        "Message:",
+        val("message"),
+        "",
+        "(Sent from the contact form on the Lunex website)"
+      ];
+      var subject = "Website enquiry: " + val("topic") + " (" + val("name") + ")";
+      window.location.href = "mailto:" + (form.getAttribute("data-to") || "support@lunexsb.com") +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(lines.join("\r\n"));
+
       if (formMoon && !reduceMotion) {
         formMoon.classList.add("is-launch");
         setTimeout(function () { formMoon.classList.remove("is-launch"); updateMoon(); }, 1500);
