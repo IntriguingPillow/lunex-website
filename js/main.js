@@ -8,6 +8,13 @@
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---------- Language ----------
+     Malay pages live in /ms/ with <html lang="ms" data-root="../">.
+     t(en, ms) picks the right text for script-generated content. */
+  var MS = (document.documentElement.lang || "").toLowerCase().indexOf("ms") === 0;
+  var ROOT = document.documentElement.getAttribute("data-root") || "";
+  function t(en, ms) { return MS ? ms : en; }
+
   /* ---------- Moon phase helper ----------
      p = 0 (new moon) … 1 (full moon). Returns an SVG path for the lit part
      of a circle centred at 50,50 with radius 46 (waxing: lit from the right). */
@@ -18,11 +25,11 @@
     return "M50 4 A46 46 0 0 1 50 96 A" + rx.toFixed(2) + " 46 0 0 " + sweep + " 50 4Z";
   }
   function phaseName(p) {
-    if (p < 0.04) return "New moon";
-    if (p < 0.4) return "Waxing crescent";
-    if (p < 0.6) return "First quarter";
-    if (p < 0.96) return "Waxing gibbous";
-    return "Full moon";
+    if (p < 0.04) return t("New moon", "Bulan baru");
+    if (p < 0.4) return t("Waxing crescent", "Bulan sabit");
+    if (p < 0.6) return t("First quarter", "Suku pertama");
+    if (p < 0.96) return t("Waxing gibbous", "Hampir purnama");
+    return t("Full moon", "Bulan purnama");
   }
   var header = document.querySelector(".site-header");
   var toggle = document.querySelector(".nav__toggle");
@@ -40,13 +47,13 @@
     if (!menu || !toggle) return;
     menu.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-label", "Open menu");
+    toggle.setAttribute("aria-label", t("Open menu", "Buka menu"));
   }
   if (toggle && menu) {
     toggle.addEventListener("click", function () {
       var open = menu.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(open));
-      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      toggle.setAttribute("aria-label", open ? t("Close menu", "Tutup menu") : t("Open menu", "Buka menu"));
     });
     menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeMenu); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeMenu(); });
@@ -58,7 +65,7 @@
 
   /* ---------- Active nav link ---------- */
   var page = location.pathname.split("/").pop() || "index.html";
-  document.querySelectorAll(".nav__menu a").forEach(function (link) {
+  document.querySelectorAll(".nav__menu a:not(.lang__opt)").forEach(function (link) {
     if (link.getAttribute("href") === page) {
       link.classList.add("is-active");
       link.setAttribute("aria-current", "page");
@@ -79,7 +86,7 @@
     intro.className = "intro";
     intro.setAttribute("aria-hidden", "true");
     intro.innerHTML = '<div class="intro__stage"><div class="intro__moon"><span class="intro__ring"></span>' + MOON_ICON +
-      '</div><img class="intro__word" src="assets/img/lunex-logo-white.svg" alt=""></div>';
+      '</div><img class="intro__word" src="' + ROOT + 'assets/img/lunex-logo-white.svg" alt=""></div>';
     document.body.appendChild(intro);
     root.classList.remove("intro-pending");
     revealDelay = 1500;
@@ -90,7 +97,7 @@
     var enter = document.createElement("div");
     enter.className = "eclipse";
     enter.style.clipPath = "circle(150% at 50% 50%)";
-    enter.innerHTML = '<img src="assets/img/lunex-icon.svg" alt="">';
+    enter.innerHTML = '<img src="' + ROOT + 'assets/img/lunex-icon.svg" alt="">';
     document.body.appendChild(enter);
     root.classList.remove("page-entering");
     revealDelay = 250;
@@ -116,7 +123,7 @@
       var ec = document.createElement("div");
       ec.className = "eclipse";
       ec.style.clipPath = "circle(0px at " + x + "px " + y + "px)";
-      ec.innerHTML = '<img src="assets/img/lunex-icon.svg" alt="">';
+      ec.innerHTML = '<img src="' + ROOT + 'assets/img/lunex-icon.svg" alt="">';
       document.body.appendChild(ec);
       void ec.offsetWidth;
       ec.style.clipPath = "circle(150% at " + x + "px " + y + "px)";
@@ -339,9 +346,9 @@
     }
     function validate(field) {
       var v = field.value.trim();
-      if (field.required && !v) return "This field is required.";
-      if (field.type === "email" && v && !emailRe.test(v)) return "Please enter a valid email address.";
-      if (field.type === "tel" && v && !phoneRe.test(v)) return "Please enter a valid phone number.";
+      if (field.required && !v) return t("This field is required.", "Ruangan ini wajib diisi.");
+      if (field.type === "email" && v && !emailRe.test(v)) return t("Please enter a valid email address.", "Sila masukkan alamat e-mel yang sah.");
+      if (field.type === "tel" && v && !phoneRe.test(v)) return t("Please enter a valid phone number.", "Sila masukkan nombor telefon yang sah.");
       return "";
     }
     fields.forEach(function (f) {
@@ -360,7 +367,7 @@
       var p = required.length ? done / required.length : 0;
       formMoonLit.setAttribute("d", moonPath(p));
       formMoon.classList.toggle("is-full", p === 1);
-      formMoonLabel.textContent = p === 1 ? "Ready for launch" : Math.round(p * 100) + "% in orbit";
+      formMoonLabel.textContent = p === 1 ? t("Ready for launch", "Sedia untuk dilancar") : Math.round(p * 100) + t("% in orbit", "% dalam orbit");
     }
     fields.forEach(function (f) {
       f.addEventListener("input", updateMoon);
@@ -372,7 +379,7 @@
     var msg = form.querySelector("#message");
     var msgCount = form.querySelector("[data-msg-count]");
     if (msg && msgCount) {
-      var countMsg = function () { msgCount.textContent = msg.value.length + " characters"; };
+      var countMsg = function () { msgCount.textContent = msg.value.length + t(" characters", " aksara"); };
       msg.addEventListener("input", countMsg);
       countMsg();
     }
@@ -414,9 +421,10 @@
       var hint = document.querySelector("[data-prefill-note]");
       if (hint) {
         var bits = [];
-        if (gotCloud) bits.push(params.get("cloud"));
-        if (gotTopic) bits.push(topicSel.value);
-        hint.textContent = "We've filled in: " + bits.join(" · ") + ". Change it if you like.";
+        var cloudSel = form.querySelector("#cloud");
+        if (gotCloud) bits.push(cloudSel.options[cloudSel.selectedIndex].text);
+        if (gotTopic) bits.push(topicSel.options[topicSel.selectedIndex].text);
+        hint.textContent = t("We've filled in: ", "Kami telah isikan: ") + bits.join(" · ") + t(". Change it if you like.", ". Anda boleh ubah jika mahu.");
         hint.hidden = false;
       }
     }
@@ -461,7 +469,7 @@
       }
       form.reset();
       document.querySelectorAll("[data-topic]").forEach(function (c) { c.classList.remove("is-on"); });
-      if (msg && msgCount) msgCount.textContent = "0 characters";
+      if (msg && msgCount) msgCount.textContent = t("0 characters", "0 aksara");
       if (reduceMotion || !formMoon) updateMoon();
       if (success) { success.classList.add("is-visible"); success.focus(); }
     });
@@ -532,12 +540,12 @@
   var match = document.querySelector("[data-match]");
   if (match) {
     var CLOUDS = {
-      aws:      { name: "AWS",           logo: "aws.svg",           c: "#ff9900", why: "the widest choice of services and regions, so it rarely limits what you can build" },
-      gcp:      { name: "Google Cloud",  logo: "google-cloud.svg",  c: "#4285f4", why: "excellent data, analytics and AI tools on a fast global network" },
-      ali:      { name: "Alibaba Cloud", logo: "alibaba-cloud.svg", c: "#ff6a00", why: "strong coverage across Asia and the smoothest route into mainland China" },
-      tencent:  { name: "Tencent Cloud", logo: "tencent-cloud.svg", c: "#2f7cf6", why: "proven infrastructure for games, live video and real-time apps" },
-      huawei:   { name: "Huawei Cloud",  logo: "huawei-cloud.svg",  c: "#e60012", why: "solid hybrid options for businesses that also run their own servers" },
-      byteplus: { name: "BytePlus",      logo: "byteplus.png",      c: "#22d3ee", why: "ByteDance's recommendation, video and AI technology, built for consumer apps" }
+      aws:      { name: "AWS",           logo: "aws.svg",           c: "#ff9900", why: t("the widest choice of services and regions, so it rarely limits what you can build", "pilihan perkhidmatan dan rantau yang paling luas, jadi ia jarang mengehadkan apa yang anda boleh bina") },
+      gcp:      { name: "Google Cloud",  logo: "google-cloud.svg",  c: "#4285f4", why: t("excellent data, analytics and AI tools on a fast global network", "alat data, analitik dan AI yang cemerlang di atas rangkaian global yang pantas") },
+      ali:      { name: "Alibaba Cloud", logo: "alibaba-cloud.svg", c: "#ff6a00", why: t("strong coverage across Asia and the smoothest route into mainland China", "liputan yang kukuh di seluruh Asia dan laluan paling lancar ke tanah besar China") },
+      tencent:  { name: "Tencent Cloud", logo: "tencent-cloud.svg", c: "#2f7cf6", why: t("proven infrastructure for games, live video and real-time apps", "infrastruktur yang terbukti untuk permainan, video langsung dan aplikasi masa nyata") },
+      huawei:   { name: "Huawei Cloud",  logo: "huawei-cloud.svg",  c: "#e60012", why: t("solid hybrid options for businesses that also run their own servers", "pilihan hibrid yang kukuh untuk perniagaan yang turut menjalankan pelayan sendiri") },
+      byteplus: { name: "BytePlus",      logo: "byteplus.png",      c: "#22d3ee", why: t("ByteDance's recommendation, video and AI technology, built for consumer apps", "teknologi cadangan, video dan AI daripada ByteDance, dibina untuk aplikasi pengguna") }
     };
     // points each answer gives each cloud
     var SCORES = {
@@ -584,16 +592,18 @@
       var ranked = ORDER.slice().sort(function (a, b) { return total[b] - total[a]; });
       var top = CLOUDS[ranked[0]], alt = CLOUDS[ranked[1]];
       result.innerHTML =
-        '<p class="match__count">Your match</p>' +
-        '<div class="match__logo" style="--c:' + top.c + '"><img src="assets/img/clouds/' + top.logo + '" alt="' + top.name + ' logo"></div>' +
-        '<h3><span>Start with</span>' + top.name + '</h3>' +
-        '<p>For ' + labels[0] + ', with users mainly ' + labels[1] + ', ' + top.name + ' gives you ' + top.why + '.</p>' +
-        '<p class="match__alt">Also worth a look: <strong>' + alt.name + '</strong>, for ' + alt.why + '.</p>' +
+        '<p class="match__count">' + t("Your match", "Padanan anda") + '</p>' +
+        '<div class="match__logo" style="--c:' + top.c + '"><img src="' + ROOT + 'assets/img/clouds/' + top.logo + '" alt="' + top.name + ' logo"></div>' +
+        '<h3><span>' + t("Start with", "Mulakan dengan") + '</span>' + top.name + '</h3>' +
+        t('<p>For ' + labels[0] + ', with users mainly ' + labels[1] + ', ' + top.name + ' gives you ' + top.why + '.</p>',
+          '<p>Untuk ' + labels[0] + ', dengan pengguna kebanyakannya ' + labels[1] + ', ' + top.name + ' menawarkan ' + top.why + '.</p>') +
+        '<p class="match__alt">' + t("Also worth a look: ", "Juga patut dipertimbangkan: ") + '<strong>' + alt.name + '</strong>' + t(", for ", ", kerana ") + alt.why + '.</p>' +
         '<div class="match__actions">' +
-          '<a class="btn btn--primary" href="contact.html?cloud=' + encodeURIComponent(top.name) + '&topic=' + encodeURIComponent("Architecture advice") + '">Confirm it in a free call</a>' +
-          '<button class="btn btn--line" type="button" data-match-restart>Start again</button>' +
+          '<a class="btn btn--primary" href="contact.html?cloud=' + encodeURIComponent(top.name) + '&topic=' + encodeURIComponent("Architecture advice") + '">' + t("Confirm it in a free call", "Sahkan dalam panggilan percuma") + '</a>' +
+          '<button class="btn btn--line" type="button" data-match-restart>' + t("Start again", "Mula semula") + '</button>' +
         '</div>' +
-        '<p class="match__note">This is a quick starting point, not a final answer. Real recommendations depend on your workload and budget.</p>';
+        '<p class="match__note">' + t("This is a quick starting point, not a final answer. Real recommendations depend on your workload and budget.",
+          "Ini hanya titik permulaan, bukan jawapan muktamad. Cadangan sebenar bergantung pada beban kerja dan bajet anda.") + '</p>';
       steps.forEach(function (s) { s.hidden = true; });
       result.hidden = false;
       back.hidden = false;
@@ -673,8 +683,9 @@
     var body = sky.querySelector(".sky__body");
     var timeEl = sky.querySelector(".sky__time");
     var metaEl = sky.querySelector(".sky__meta");
-    var fmtTime = new Intl.DateTimeFormat("en-MY", { timeZone: TZ, hour: "numeric", minute: "2-digit", hour12: true });
+    var fmtTime = new Intl.DateTimeFormat(MS ? "ms-MY" : "en-MY", { timeZone: TZ, hour: "numeric", minute: "2-digit", hour12: true });
     var fmtParts = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", weekday: "long", hour12: false });
+    var fmtDay = new Intl.DateTimeFormat(MS ? "ms-MY" : "en-GB", { timeZone: TZ, weekday: "long" });
 
     function paintSky() {
       var now = new Date();
@@ -686,18 +697,20 @@
       sky.setAttribute("data-period", period);
 
       var isSun = h >= 6 && h < 19;
-      var t = isSun ? (h - 6) / 13 : ((h - 19 + 24) % 24) / 11;
-      t = Math.max(0, Math.min(1, t));
+      var arc = isSun ? (h - 6) / 13 : ((h - 19 + 24) % 24) / 11;
+      arc = Math.max(0, Math.min(1, arc));
       body.className = "sky__body " + (isSun ? "is-sun" : "is-moon");
-      body.style.left = (8 + t * 84) + "%";
-      body.style.top = (82 - Math.sin(t * Math.PI) * 58) + "%";
+      body.style.left = (8 + arc * 84) + "%";
+      body.style.top = (82 - Math.sin(arc * Math.PI) * 58) + "%";
 
       timeEl.textContent = fmtTime.format(now).replace(/\s?(am|pm)/i, function (m) { return " " + m.trim().toLowerCase(); });
 
       var diff = (480 + now.getTimezoneOffset()) / 60; // KL is UTC+8
-      var rel = diff === 0 ? "Same time zone as you"
-        : Math.abs(diff) + (Math.abs(diff) === 1 ? " hour " : " hours ") + (diff > 0 ? "ahead of you" : "behind you");
-      metaEl.textContent = parts.weekday + " in Kuala Lumpur · " + rel;
+      var n = Math.abs(diff);
+      var rel = diff === 0 ? t("Same time zone as you", "Zon waktu yang sama dengan anda")
+        : MS ? n + " jam " + (diff > 0 ? "di hadapan anda" : "di belakang anda")
+             : n + (n === 1 ? " hour " : " hours ") + (diff > 0 ? "ahead of you" : "behind you");
+      metaEl.textContent = fmtDay.format(now) + t(" in Kuala Lumpur · ", " di Kuala Lumpur · ") + rel;
     }
     paintSky();
     setInterval(paintSky, 30000);

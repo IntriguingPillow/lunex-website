@@ -22,6 +22,26 @@ Open `index.html` in a browser, or in a terminal:
 start index.html
 ```
 
+## English & Bahasa Melayu
+
+The site has an **EN | MS** switch in the top-right corner. Malay pages live in `ms/`
+and are **generated** from the English pages. Don't edit `ms/*.html` by hand.
+
+1. Edit the English page (e.g. `services.html`).
+2. If you changed or added text, add/update its Malay line in `tools/i18n-ms.txt`
+   (format: `English text|||Malay text`).
+3. Rebuild the Malay pages:
+
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File tools\build-ms.ps1
+   ```
+
+   The script lists any English text that has no translation yet, and any
+   translations that are no longer used.
+
+Text created by JavaScript (matchmaker results, form messages, clock) is translated
+inside `js/main.js` with `t("English", "Melayu")`.
+
 ## Structure
 
 ```

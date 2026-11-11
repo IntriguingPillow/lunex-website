@@ -15,7 +15,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="alternate" hreflang="en" href="contact.html">
+  <link rel="alternate" hreflang="ms" href="ms/contact.html">
   <script>(function(d){try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches){var s=sessionStorage;if(s.getItem("lx-trans"))d.classList.add("page-entering");else if(!s.getItem("lx-intro"))d.classList.add("intro-pending");}}catch(e){}setTimeout(function(){d.classList.remove("page-entering","intro-pending")},3000)})(document.documentElement)</script>
 </head>
 <body>
@@ -34,6 +36,7 @@
           <li><a class="nav__link" href="about.html">About Us</a></li>
           <li class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Contact Us</a></li>
         </ul>
+        <div class="lang" role="group" aria-label="Language / Bahasa"><a class="lang__opt is-on" data-lang="en" href="contact.html" hreflang="en" aria-current="true">EN</a><a class="lang__opt" data-lang="ms" href="ms/contact.html" hreflang="ms">MS</a></div>
         <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
           <span></span><span></span><span></span>
         </button>
@@ -107,13 +110,13 @@
               <label for="cloud">Cloud you're interested in</label>
               <select id="cloud" name="cloud">
                 <option value="">Not sure yet</option>
-                <option>AWS</option>
-                <option>Google Cloud</option>
-                <option>Alibaba Cloud</option>
-                <option>Tencent Cloud</option>
-                <option>Huawei Cloud</option>
-                <option>BytePlus</option>
-                <option>More than one</option>
+                <option value="AWS">AWS</option>
+                <option value="Google Cloud">Google Cloud</option>
+                <option value="Alibaba Cloud">Alibaba Cloud</option>
+                <option value="Tencent Cloud">Tencent Cloud</option>
+                <option value="Huawei Cloud">Huawei Cloud</option>
+                <option value="BytePlus">BytePlus</option>
+                <option value="More than one">More than one</option>
               </select>
               <span class="form__error" data-error-for="cloud" aria-live="polite"></span>
             </div>
@@ -121,13 +124,13 @@
               <label for="topic">What do you need help with? <span class="req">*</span></label>
               <select id="topic" name="topic" required>
                 <option value="">Choose one</option>
-                <option>New account setup</option>
-                <option>Billing &amp; payment / transfer accounts</option>
-                <option>Architecture advice</option>
-                <option>Migration</option>
-                <option>Cost &amp; security check-up</option>
-                <option>Technical support</option>
-                <option>Something else</option>
+                <option value="New account setup">New account setup</option>
+                <option value="Billing &amp; payment / transfer accounts">Billing &amp; payment / transfer accounts</option>
+                <option value="Architecture advice">Architecture advice</option>
+                <option value="Migration">Migration</option>
+                <option value="Cost &amp; security check-up">Cost &amp; security check-up</option>
+                <option value="Technical support">Technical support</option>
+                <option value="Something else">Something else</option>
               </select>
               <span class="form__error" data-error-for="topic" aria-live="polite"></span>
             </div>
@@ -257,6 +260,6 @@
     <div class="footer__word" aria-hidden="true">lunex</div>
   </footer>
 
-  <script src="js/main.js?v=6"></script>
+  <script src="js/main.js?v=8"></script>
 </body>
 </html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ms" data-root="../">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perkhidmatan | Rakan Kongsi Pelbagai Awan Lunex</title>
+  <meta name="description" content="Persediaan akaun, pengebilan pelbagai mata wang, nasihat seni bina, migrasi, semakan kos dan keselamatan, serta sokongan tempatan untuk AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud dan BytePlus.">
+  <meta name="theme-color" content="#0a1430">
+  <meta property="og:title" content="Perkhidmatan | Lunex">
+  <meta property="og:description" content="Segala-galanya tentang awan anda, diuruskan oleh satu pasukan Malaysia.">
+  <meta property="og:image" content="../assets/img/lunex-icon-512.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=8">
+  <link rel="alternate" hreflang="en" href="../services.html">
+  <link rel="alternate" hreflang="ms" href="services.html">
+  <script>(function(d){try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches){var s=sessionStorage;if(s.getItem("lx-trans"))d.classList.add("page-entering");else if(!s.getItem("lx-intro"))d.classList.add("intro-pending");}}catch(e){}setTimeout(function(){d.classList.remove("page-entering","intro-pending")},3000)})(document.documentElement)</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Langkau ke kandungan</a>
+
+  <!-- ============ Floating header ============ -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="index.html" class="nav__logo" aria-label="Laman utama Lunex">
+          <img src="../assets/img/lunex-logo-white.svg" alt="Lunex" width="99" height="34">
+        </a>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="index.html">Utama</a></li>
+          <li><a class="nav__link" href="services.html">Perkhidmatan</a></li>
+          <li><a class="nav__link" href="about.html">Tentang Kami</a></li>
+          <li class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Hubungi Kami</a></li>
+        </ul>
+        <div class="lang" role="group" aria-label="Bahasa / Language"><a class="lang__opt" data-lang="en" href="../services.html" hreflang="en">EN</a><a class="lang__opt is-on" data-lang="ms" href="services.html" hreflang="ms" aria-current="true">MS</a></div>
+        <button class="nav__toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Page hero ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker reveal">Perkhidmatan</p>
+        <h1 class="reveal d1">Segala-galanya tentang awan anda, <span class="glow-text">kami uruskan.</span></h1>
+        <p class="lead reveal d2">Penyedia awan memberi anda pelayan. Lunex menguruskan selebihnya: akaun, bil, reka bentuk, perpindahan, pemeriksaan dan orang yang anda hubungi apabila berlaku masalah.</p>
+        <nav class="jump reveal d3" aria-label="Pergi ke perkhidmatan">
+          <a href="#account">Persediaan akaun</a>
+          <a href="#billing">Pengebilan &amp; mata wang</a>
+          <a href="#consulting">Nasihat seni bina</a>
+          <a href="#migration">Migrasi</a>
+          <a href="#guard">Kos &amp; keselamatan</a>
+          <a href="#support">Sokongan</a>
+          <a href="#partners">Awan kami</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ============ Cloud matchmaker ============ -->
+    <section class="section" style="padding-bottom:0">
+      <div class="container">
+        <div class="match reveal" data-match>
+          <div class="match__intro">
+            <p class="kicker">Pencari padanan awan</p>
+            <h2>Tidak pasti awan mana yang sesuai? Tanya bulan.</h2>
+            <p>Jawab tiga soalan ringkas dan kami akan mencadangkan tempat untuk bermula. Setiap jawapan mengisi sedikit lagi bulan.</p>
+            <div class="match__steps" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+
+          <div class="match__panel" aria-live="polite">
+            <div class="match__q">
+              <p class="match__count">Soalan 1 daripada 3</p>
+              <h3>Apa yang anda bina?</h3>
+              <div class="match__opts">
+                <button class="match__opt" type="button" data-value="web" data-label="laman web atau kedai dalam talian">Laman web atau kedai dalam talian<small>Laman syarikat, e-dagang, tempahan</small></button>
+                <button class="match__opt" type="button" data-value="live" data-label="permainan atau aplikasi langsung">Permainan atau aplikasi langsung<small>Penstriman, sembang, berbilang pemain</small></button>
+                <button class="match__opt" type="button" data-value="data" data-label="projek data atau AI">Projek data atau AI<small>Analitik, papan pemuka, pembelajaran mesin</small></button>
+                <button class="match__opt" type="button" data-value="biz" data-label="sistem perniagaan anda">Sistem perniagaan<small>ERP, alat dalaman, pelayan fail</small></button>
+              </div>
+            </div>
+            <div class="match__q" hidden>
+              <p class="match__count">Soalan 2 daripada 3</p>
+              <h3>Di manakah kebanyakan pengguna anda?</h3>
+              <div class="match__opts">
+                <button class="match__opt" type="button" data-value="sea" data-label="di Malaysia dan Asia Tenggara">Malaysia &amp; Asia Tenggara<small>Pelanggan tempatan dan serantau</small></button>
+                <button class="match__opt" type="button" data-value="china" data-label="di China">China<small>Pengguna di tanah besar China</small></button>
+                <button class="match__opt" type="button" data-value="global" data-label="di seluruh dunia">Di seluruh dunia<small>Khalayak global</small></button>
+              </div>
+            </div>
+            <div class="match__q" hidden>
+              <p class="match__count">Soalan 3 daripada 3</p>
+              <h3>Apa yang paling penting bagi anda?</h3>
+              <div class="match__opts">
+                <button class="match__opt" type="button" data-value="cost" data-label="kos">Mengekalkan kos yang rendah<small>Nilai terbaik untuk bajet</small></button>
+                <button class="match__opt" type="button" data-value="easy" data-label="kemudahan">Mudah diurus<small>Pasukan kecil, persediaan mudah</small></button>
+                <button class="match__opt" type="button" data-value="tech" data-label="ciri-ciri">Teknologi khusus<small>AI, video, perkhidmatan khas</small></button>
+                <button class="match__opt" type="button" data-value="hybrid" data-label="hibrid">Berfungsi dengan pelayan kami sendiri<small>Persediaan hibrid atau peraturan ketat</small></button>
+              </div>
+            </div>
+            <div class="match__result" hidden></div>
+            <button class="match__back" type="button" hidden>&larr; Kembali</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Services detail ============ -->
+    <section class="section">
+      <div class="container svc-layout">
+        <aside class="svc-nav" aria-label="Indeks perkhidmatan">
+          <p>Dalam halaman ini</p>
+          <a href="#account"><small>01</small>Persediaan akaun</a>
+          <a href="#billing"><small>02</small>Pengebilan &amp; mata wang</a>
+          <a href="#consulting"><small>03</small>Nasihat seni bina</a>
+          <a href="#migration"><small>04</small>Migrasi</a>
+          <a href="#guard"><small>05</small>Kos &amp; keselamatan</a>
+          <a href="#support"><small>06</small>Sokongan</a>
+        </aside>
+
+        <div>
+          <!-- 01 -->
+          <article class="svc" id="account">
+            <div class="svc__num" aria-hidden="true">01</div>
+            <h2>Persediaan &amp; pemindahan akaun</h2>
+            <p>Membuka akaun awan kedengaran mudah sehingga pengesahan tersekat, orang yang salah menjadi pemilik, atau semua orang berkongsi satu log masuk pentadbir. Kami membuka akaun baharu di bawah program rakan kongsi kami, atau memindahkan akaun sedia ada anda ke bawah Lunex, dan menyediakannya dengan betul dari hari pertama.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>Apa yang anda dapat</h3>
+                <ul class="ticks">
+                  <li>Akaun baharu di mana-mana enam awan</li>
+                  <li>Log masuk dan peranan berasingan untuk setiap ahli pasukan</li>
+                  <li>Asas keselamatan: MFA, amaran dan log audit</li>
+                  <li>Diskaun pelanggan untuk membantu mengurangkan kos awan anda</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>Bagaimana ia berjalan</h3>
+                <ol class="flow">
+                  <li><strong>Beritahu kami siapa yang perlukan akses</strong><span>Butiran syarikat dan senarai pasukan anda.</span></li>
+                  <li><strong>Kami buka atau pindahkan</strong><span>Kami uruskan dokumen dan semakan pihak penyedia.</span></li>
+                  <li><strong>Penyerahan</strong><span>Anda menerima log masuk, berserta panduan ringkas tentang siapa boleh buat apa.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=New%20account%20setup">Tanya kami tentang persediaan akaun <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- 02 -->
+          <article class="svc" id="billing">
+            <div class="svc__num" aria-hidden="true">02</div>
+            <h2>Pengebilan &amp; tambah nilai dalam mata wang anda</h2>
+            <p>Penyedia global biasanya mengebil dalam dolar AS melalui kad kredit. Ini bermakna turun naik kadar pertukaran, had kad, dan perkhidmatan tergendala apabila pembayaran gagal. Dengan Lunex, setiap awan yang anda guna digabungkan dalam satu invois yang boleh anda jelaskan dalam Ringgit atau mata wang yang paling sesuai untuk perniagaan anda.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>Apa yang anda dapat</h3>
+                <ul class="ticks">
+                  <li>Satu invois bulanan merangkumi semua awan</li>
+                  <li>Jelaskan dalam MYR, USD atau mata wang lain yang disokong</li>
+                  <li>Pembayaran melalui pindahan bank</li>
+                  <li>Pilihan tambah nilai prabayar untuk bajet yang lebih ketat</li>
+                  <li>Laporan perbelanjaan bulanan, dipecahkan mengikut projek</li>
+                  <li>Amaran bajet sebelum kos melebihi had</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>Bagaimana ia berjalan</h3>
+                <ol class="flow">
+                  <li><strong>Pautkan akaun anda</strong><span>Akaun awan anda dibilkan melalui Lunex.</span></li>
+                  <li><strong>Guna seperti biasa</strong><span>Tiada apa yang berubah untuk jurutera anda.</span></li>
+                  <li><strong>Bayar satu invois</strong><span>Dalam mata wang pilihan anda setiap bulan, dengan laporan penggunaan yang jelas.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=Billing%20%26%20payment%20%2F%20transfer%20accounts">Tanya kami tentang pengebilan &amp; mata wang<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- 03 -->
+          <article class="svc" id="consulting">
+            <div class="svc__num" aria-hidden="true">03</div>
+            <h2>Nasihat seni bina</h2>
+            <p>Setiap penyedia akan memberitahu anda awannya yang terbaik. Kami bekerjasama dengan keenam-enamnya, jadi matlamat kami hanyalah persediaan yang sesuai dengan beban kerja, pengguna dan bajet anda, walaupun ia bermakna menggabungkan lebih daripada satu awan.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>Apa yang anda dapat</h3>
+                <ul class="ticks">
+                  <li>Semakan persediaan semasa atau idea baharu anda</li>
+                  <li>Perbandingan bersebelahan awan dan rantau yang sesuai</li>
+                  <li>Rajah seni bina yang boleh dikongsi dengan pasukan anda</li>
+                  <li>Anggaran kos bulanan dalam mata wang pilihan anda</li>
+                  <li>Cadangan untuk penskalaan, sandaran dan masa operasi</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>Bagaimana ia berjalan</h3>
+                <ol class="flow">
+                  <li><strong>Sesi penerokaan</strong><span>Kami memahami apa yang anda bina dan untuk siapa.</span></li>
+                  <li><strong>Pilihan &amp; pertimbangan</strong><span>Kami tunjukkan dua atau tiga pilihan, dengan kebaikan dan keburukan yang jujur.</span></li>
+                  <li><strong>Reka bentuk akhir</strong><span>Pelan yang jelas untuk anda bina sendiri, atau dengan bantuan kami.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=Architecture%20advice">Dapatkan nasihat seni bina daripada kami <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- 04 -->
+          <article class="svc" id="migration">
+            <div class="svc__num" aria-hidden="true">04</div>
+            <h2>Migrasi</h2>
+            <p>Berpindah daripada pelayan pejabat ke awan, atau dari satu awan ke awan lain, sama seperti berpindah rumah: kebanyakan risiko terletak pada perancangan. Kami memetakan segala-galanya dahulu, berlatih pada salinan, dan bertukar apabila sesuai untuk perniagaan anda.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>Apa yang anda dapat</h3>
+                <ul class="ticks">
+                  <li>Inventori pelayan, pangkalan data dan kebergantungan</li>
+                  <li>Pelan migrasi dan pemulihan langkah demi langkah</li>
+                  <li>Migrasi ujian sebelum yang sebenar</li>
+                  <li>Pemindahan data dan aplikasi</li>
+                  <li>Sokongan semasa dan selepas pertukaran</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>Bagaimana ia berjalan</h3>
+                <ol class="flow">
+                  <li><strong>Menilai</strong><span>Apa yang dipindahkan, apa yang kekal dan apa yang diganti.</span></li>
+                  <li><strong>Berlatih</strong><span>Larian ujian penuh pada salinan sistem anda.</span></li>
+                  <li><strong>Bertukar</strong><span>Dirancang pada waktu paling lengang anda.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=Migration">Tanya kami tentang migrasi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- 05 -->
+          <article class="svc" id="guard">
+            <div class="svc__num" aria-hidden="true">05</div>
+            <h2>Pemeriksaan kos &amp; keselamatan</h2>
+            <p>Bil awan cenderung meningkat secara senyap, dan tetapan kecil yang dibiarkan terbuka boleh menjadi masalah besar. Kami menyemak akaun anda secara berkala dan menerangkan penemuan kami dalam bahasa mudah, disusun mengikut keutamaan.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>Apa yang anda dapat</h3>
+                <ul class="ticks">
+                  <li>Sumber terbiar dan bersaiz berlebihan dikenal pasti</li>
+                  <li>Pilihan penjimatan seperti kapasiti tempahan dan saiz yang tepat</li>
+                  <li>Semakan storan awam, port terbuka dan akses yang lemah</li>
+                  <li>Semakan sandaran dan pemulihan</li>
+                  <li>Laporan bertulis ringkas dengan senarai tugasan mengikut keutamaan</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>Bagaimana ia berjalan</h3>
+                <ol class="flow">
+                  <li><strong>Akses baca sahaja</strong><span>Kami melihat, dan tidak mengubah apa-apa tanpa kelulusan anda.</span></li>
+                  <li><strong>Semakan</strong><span>Semakan kos dan keselamatan merentasi akaun anda.</span></li>
+                  <li><strong>Penerangan</strong><span>Panggilan untuk meneliti penemuan, kemudian kami bantu membaikinya jika anda mahu.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=Cost%20%26%20security%20check-up">Tempah pemeriksaan kos &amp; keselamatan <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- 06 -->
+          <article class="svc" id="support">
+            <div class="svc__num" aria-hidden="true">06</div>
+            <h2>Sokongan teknikal tempatan</h2>
+            <p>Apabila berlaku masalah, anda mahukan seseorang yang sudah mengenali persediaan anda, bukan nombor tiket. Hantar mesej terus kepada pasukan kami. Jika masalah berpunca daripada pihak penyedia, kami akan memanjangkannya melalui saluran rakan kongsi kami dan sentiasa memaklumkan anda.</p>
+            <div class="svc__grid">
+              <div data-spotlight class="svc__box reveal">
+                <h3>Apa yang anda dapat</h3>
+                <ul class="ticks">
+                  <li>Sokongan melalui saluran pilihan anda: e-mel, WhatsApp, Telegram dan lain-lain</li>
+                  <li>Pengurus akaun khusus</li>
+                  <li>Eskalasi kepada penyedia awan bagi pihak anda</li>
+                  <li>Bantuan semasa insiden dan gangguan</li>
+                  <li>Nasihat untuk soalan harian "bagaimana saya…"</li>
+                </ul>
+              </div>
+              <div data-spotlight class="svc__box reveal d1">
+                <h3>Bagaimana ia berjalan</h3>
+                <ol class="flow">
+                  <li><strong>Hubungi kami</strong><span>Hantar mesej melalui saluran pilihan anda.</span></li>
+                  <li><strong>Kami menyiasat</strong><span>Menggunakan apa yang kami sudah tahu tentang persediaan anda.</span></li>
+                  <li><strong>Selesaikan atau panjangkan</strong><span>Dibaiki oleh kami, atau dipanjangkan kepada penyedia dengan konteks penuh.</span></li>
+                </ol>
+              </div>
+            </div>
+            <a class="inline-link" href="contact.html?topic=Technical%20support">Dapatkan sokongan daripada pasukan kami <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <div class="chat chat--btn" data-chat>
+              <button class="btn btn--line btn--sm chat__toggle" type="button" aria-expanded="false" aria-controls="chat-menu-support" aria-haspopup="true">Berbual di WhatsApp / Telegram<svg class="chat__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+              <div class="chat__menu" id="chat-menu-support" role="menu" aria-label="Pilih cara untuk berbual" hidden>
+                <a class="chat__opt" role="menuitem" href="https://wa.me/601118791260" target="_blank" rel="noopener"><span class="chat__badge chat__badge--wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M9 9.5c.4 1.8 1.7 3.3 3.5 4l1.2-1.1 1.8.8-.5 1.6c-3.3-.3-6-3-6.3-6.3l1.6-.5.8 1.8Z" fill="currentColor" stroke="none"/></svg></span><span>WhatsApp<small>Berbual dengan kami di WhatsApp</small></span></a>
+                <a class="chat__opt" role="menuitem" href="https://t.me/+601118791260" target="_blank" rel="noopener"><span class="chat__badge chat__badge--tg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 3.5 2.5 11l6.5 2.2 2.2 6.8 3.3-4.2 5.5 4 1.5-16.3Z"/><path d="M9 13.2 18 7"/></svg></span><span>Telegram<small>Hantar mesej kepada kami di Telegram</small></span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Cloud partners ============ -->
+    <section class="section section--deep" id="partners">
+      <div class="container">
+        <p class="kicker">Awan kami</p>
+        <h2 class="h-lg">Enam platform, masing-masing<br>dengan kekuatan tersendiri.</h2>
+        <p class="lead">Setiap perkhidmatan di atas berfungsi pada keenam-enamnya. Inilah kekuatan utama setiap awan. Kami akan membantu anda memilih satu, atau menggabungkan beberapa.</p>
+
+        <div class="planets">
+          <article data-spotlight class="planet reveal" style="--c:#ff9900" id="aws">
+            <div class="planet__orb"><img src="../assets/img/clouds/aws.svg" alt="Logo AWS"></div>
+            <h3>AWS</h3>
+            <p class="planet__known">Katalog perkhidmatan yang paling luas</p>
+            <p>Platform matang dan menyeluruh dengan perkhidmatan untuk hampir setiap keperluan, daripada laman web ringkas hingga sistem perusahaan yang besar.</p>
+            <ul class="mc__chips"><li>Web &amp; aplikasi</li><li>Perusahaan</li><li>Syarikat permulaan</li></ul>
+            <a class="inline-link" href="contact.html?cloud=AWS">Bincang dengan kami tentang AWS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article data-spotlight class="planet reveal d1" style="--c:#4285f4" id="google-cloud">
+            <div class="planet__orb"><img src="../assets/img/clouds/google-cloud.svg" alt="Logo Google Cloud"></div>
+            <h3>Google Cloud</h3>
+            <p class="planet__known">Data, analitik &amp; AI</p>
+            <p>Hebat dalam mengendalikan data berskala besar dan pembelajaran mesin, dengan alat yang serasi dengan Google Workspace.</p>
+            <ul class="mc__chips"><li>Analitik</li><li>AI / ML</li><li>Kontena</li></ul>
+            <a class="inline-link" href="contact.html?cloud=Google%20Cloud">Bincang dengan kami tentang Google Cloud <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article data-spotlight class="planet reveal d2" style="--c:#ff6a00" id="alibaba-cloud">
+            <div class="planet__orb"><img src="../assets/img/clouds/alibaba-cloud.svg" alt="Logo Alibaba Cloud"></div>
+            <h3>Alibaba Cloud</h3>
+            <p class="planet__known">Ketersambungan Asia &amp; China</p>
+            <p>Pilihan utama bagi perniagaan yang melayani pengguna di Asia, terutamanya yang perlu menjangkau atau beroperasi di China.</p>
+            <ul class="mc__chips"><li>E-dagang</li><li>Jangkauan China</li><li>CDN</li></ul>
+            <a class="inline-link" href="contact.html?cloud=Alibaba%20Cloud">Bincang dengan kami tentang Alibaba Cloud <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article data-spotlight class="planet reveal" style="--c:#2f7cf6" id="tencent-cloud">
+            <div class="planet__orb"><img src="../assets/img/clouds/tencent-cloud.svg" alt="Logo Tencent Cloud" style="transform:scale(1.55)"></div>
+            <h3>Tencent Cloud</h3>
+            <p class="planet__known">Permainan, media &amp; masa nyata</p>
+            <p>Dibina berdasarkan pengalaman menjalankan permainan dan aplikasi sosial berskala besar. Sangat sesuai untuk penstriman langsung, video dan komunikasi masa nyata.</p>
+            <ul class="mc__chips"><li>Permainan</li><li>Video langsung</li><li>Sembang masa nyata</li></ul>
+            <a class="inline-link" href="contact.html?cloud=Tencent%20Cloud">Bincang dengan kami tentang Tencent Cloud <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article data-spotlight class="planet reveal d1" style="--c:#e60012" id="huawei-cloud">
+            <div class="planet__orb"><img src="../assets/img/clouds/huawei-cloud.svg" alt="Logo Huawei Cloud" style="height:52%"></div>
+            <h3>Huawei Cloud</h3>
+            <p class="planet__known">Perusahaan &amp; hibrid</p>
+            <p>Popular dalam kalangan perusahaan dan sektor awam yang memerlukan persediaan hibrid, menggabungkan pusat data sendiri dengan awan.</p>
+            <ul class="mc__chips"><li>Awan hibrid</li><li>Perusahaan</li><li>Sektor awam</li></ul>
+            <a class="inline-link" href="contact.html?cloud=Huawei%20Cloud">Bincang dengan kami tentang Huawei Cloud <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article data-spotlight class="planet reveal d2" style="--c:#22d3ee" id="byteplus">
+            <div class="planet__orb"><img src="../assets/img/clouds/byteplus.png" alt="Logo BytePlus" style="height:62%"></div>
+            <h3>BytePlus</h3>
+            <p class="planet__known">Teknologi cadangan &amp; media</p>
+            <p>Membawa teknologi ByteDance kepada perniagaan: cadangan diperibadikan, alat video dan AI untuk aplikasi pengguna.</p>
+            <ul class="mc__chips"><li>Cadangan</li><li>Video</li><li>Aplikasi pengguna</li></ul>
+            <a class="inline-link" href="contact.html?cloud=BytePlus">Bincang dengan kami tentang BytePlus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section">
+      <div class="container">
+        <p class="kicker">Soalan lazim</p>
+        <h2 class="h-lg" style="margin-bottom:40px">Sering ditanya, dijawab dengan jelas.</h2>
+        <div class="faq">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-1">Adakah ia lebih mahal daripada membeli terus?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-1"><p>Anda membayar penggunaan awan berdasarkan harga penyedia itu sendiri. Sebarang yuran perkhidmatan Lunex dinyatakan dengan jelas dalam sebut harga anda sebelum anda bersetuju, jadi tiada caj tersembunyi.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-2">Bolehkah anda mengambil alih akaun awan yang kami sudah ada?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-2"><p>Ya. Dalam kebanyakan kes, akaun sedia ada boleh dipindahkan ke bawah Lunex untuk pengebilan dan sokongan tanpa mengubah pelayan, data atau tetapan anda. Kami merancang setiap pemindahan bersama anda supaya sebarang gangguan dapat dikurangkan.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-3">Adakah kami perlu menggunakan keenam-enam awan?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-3"><p>Sama sekali tidak. Kebanyakan pelanggan menggunakan satu atau dua. Dengan keenam-enamnya tersedia, kami boleh mengesyorkan yang paling sesuai, dan menambah yang lain kemudian jika keperluan anda berubah.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-4">Siapakah pemilik data dan akaun kami?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-4"><p>Anda. Lunex menguruskan pengebilan dan membantu mengurus akaun anda, tetapi data, aplikasi dan tetapan anda sentiasa milik anda.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-5">Adakah perbelanjaan minimum?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-5"><p>Berbincang dengan kami adalah percuma. Sesetengah perkhidmatan atau program penyedia mempunyai syarat tersendiri, dan kami akan memaklumkannya lebih awal, sebelum anda menandatangani apa-apa.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-6">Bagaimana kami boleh menghubungi sokongan?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq__a" id="faq-6"><p>Melalui saluran yang sesuai dengan pasukan anda, termasuk e-mel, WhatsApp dan Telegram, terus kepada pasukan Malaysia kami. Anda juga akan mempunyai pengurus akaun khusus yang mengenali persediaan anda.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA band ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="band reveal">
+          <div>
+            <h2>Tidak pasti perkhidmatan mana yang anda perlukan?</h2>
+            <p>Ceritakan kepada kami tentang awan anda. Kami akan tunjukkan arah yang betul, walaupun jawapannya anda tidak perlukan apa-apa.</p>
+          </div>
+          <div class="band__actions">
+            <a class="btn btn--primary" href="contact.html">
+              Dapatkan konsultasi percuma
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <!-- Placeholder contact details use ** for values still to be confirmed. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../assets/img/lunex-logo-white.svg" alt="Lunex" width="104" height="36">
+          <p>Rakan kongsi tempatan anda untuk AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud dan BytePlus.</p>
+        </div>
+        <div>
+          <h4>Terokai</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="services.html">Perkhidmatan</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="contact.html">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Awan</h4>
+          <ul class="footer__links">
+            <li><a href="services.html#aws">AWS</a></li>
+            <li><a href="services.html#google-cloud">Google Cloud</a></li>
+            <li><a href="services.html#alibaba-cloud">Alibaba Cloud</a></li>
+            <li><a href="services.html#tencent-cloud">Tencent Cloud</a></li>
+            <li><a href="services.html#huawei-cloud">Huawei Cloud</a></li>
+            <li><a href="services.html#byteplus">BytePlus</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hubungi kami</h4>
+          <ul class="footer__contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:support@lunexsb.com?subject=Enquiry%20from%20the%20Lunex%20website">support@lunexsb.com</a></li>
+            <li class="chat chat--footer" data-chat><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+              <button class="chat__toggle" type="button" aria-expanded="false" aria-controls="chat-menu-footer" aria-haspopup="true">+60 11-1879 1260<svg class="chat__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><small>WhatsApp / Telegram</small></button>
+              <div class="chat__menu" id="chat-menu-footer" role="menu" aria-label="Pilih cara untuk berbual" hidden>
+                <a class="chat__opt" role="menuitem" href="https://wa.me/601118791260" target="_blank" rel="noopener"><span class="chat__badge chat__badge--wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M9 9.5c.4 1.8 1.7 3.3 3.5 4l1.2-1.1 1.8.8-.5 1.6c-3.3-.3-6-3-6.3-6.3l1.6-.5.8 1.8Z" fill="currentColor" stroke="none"/></svg></span><span>WhatsApp<small>Berbual dengan kami di WhatsApp</small></span></a>
+                <a class="chat__opt" role="menuitem" href="https://t.me/+601118791260" target="_blank" rel="noopener"><span class="chat__badge chat__badge--tg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 3.5 2.5 11l6.5 2.2 2.2 6.8 3.3-4.2 5.5 4 1.5-16.3Z"/><path d="M9 13.2 18 7"/></svg></span><span>Telegram<small>Hantar mesej kepada kami di Telegram</small></span></a>
+              </div>
+            </li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=5%2C%20Lorong%20Peel%2C%20Maluri%2C%2055100%20Cheras%2C%20Kuala%20Lumpur%2C%20Malaysia" target="_blank" rel="noopener">5, Lorong Peel, Maluri, 55100 Cheras, Wilayah Persekutuan Kuala Lumpur</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2026</span> Lunex. Hak cipta terpelihara.</span>
+        <span>SSM 202601023276 (1685373-X)</span>
+      </div>
+    </div>
+    <div class="footer__word" aria-hidden="true">lunex</div>
+  </footer>
+
+  <script src="../js/main.js?v=8"></script>
+</body>
+</html>

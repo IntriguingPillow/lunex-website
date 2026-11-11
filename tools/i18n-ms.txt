@@ -1,0 +1,460 @@
+# English -> Bahasa Melayu translations for the Lunex website.
+# Format: English text|||Malay text   (one per line; exact match of the text between tags,
+# or of alt / aria-label / placeholder / content / data-label attributes).
+# Keep HTML entities as they appear in the page (&amp; not &).
+# After editing, run:  powershell -File tools\build-ms.ps1
+
+# ---------- Shared: titles, nav, footer ----------
+Lunex | Your Local Multi-Cloud Partner in Malaysia|||Lunex | Rakan Kongsi Pelbagai Awan Tempatan Anda di Malaysia
+Services | Lunex Multi-Cloud Partner|||Perkhidmatan | Rakan Kongsi Pelbagai Awan Lunex
+About Us | Lunex|||Tentang Kami | Lunex
+Contact Us | Lunex|||Hubungi Kami | Lunex
+Skip to content|||Langkau ke kandungan
+Home|||Utama
+Services|||Perkhidmatan
+About Us|||Tentang Kami
+Contact Us|||Hubungi Kami
+Main|||Navigasi utama
+Lunex home|||Laman utama Lunex
+Open menu|||Buka menu
+Language / Bahasa|||Bahasa / Language
+Your local partner for AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud and BytePlus.|||Rakan kongsi tempatan anda untuk AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud dan BytePlus.
+Explore|||Terokai
+Clouds|||Awan
+Reach us|||Hubungi kami
+Lunex. All rights reserved.|||Lunex. Hak cipta terpelihara.
+Choose how to chat|||Pilih cara untuk berbual
+Chat with us on WhatsApp|||Berbual dengan kami di WhatsApp
+Message us on Telegram|||Hantar mesej kepada kami di Telegram
+
+# ---------- Meta descriptions ----------
+Lunex is a Malaysia-based cloud reseller for AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud and BytePlus. Flexible multi-currency billing, local support and advice without a sales agenda.|||Lunex ialah penjual semula awan yang berpangkalan di Malaysia untuk AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud dan BytePlus. Pengebilan pelbagai mata wang yang fleksibel, sokongan tempatan dan nasihat tanpa agenda jualan.
+Lunex | Keep every cloud in orbit|||Lunex | Pastikan setiap awan kekal dalam orbit
+Accounts, multi-currency billing, migration and support for six cloud platforms, from one Malaysian team.|||Akaun, pengebilan pelbagai mata wang, migrasi dan sokongan untuk enam platform awan, daripada satu pasukan Malaysia.
+Account setup, multi-currency billing, architecture advice, migration, cost and security reviews, and local support for AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud and BytePlus.|||Persediaan akaun, pengebilan pelbagai mata wang, nasihat seni bina, migrasi, semakan kos dan keselamatan, serta sokongan tempatan untuk AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud dan BytePlus.
+Services | Lunex|||Perkhidmatan | Lunex
+Everything around your cloud, handled by one Malaysian team.|||Segala-galanya tentang awan anda, diuruskan oleh satu pasukan Malaysia.
+Lunex is a Malaysian multi-cloud reseller (SSM 202601023276) helping businesses use AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud and BytePlus with local billing and support.|||Lunex ialah penjual semula pelbagai awan Malaysia (SSM 202601023276) yang membantu perniagaan menggunakan AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud dan BytePlus dengan pengebilan dan sokongan tempatan.
+Named after the moon. Built for the cloud.|||Dinamakan sempena bulan. Dibina untuk awan.
+Talk to Lunex about AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud or BytePlus. Free consultation, reply within one business day.|||Berbincang dengan Lunex tentang AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud atau BytePlus. Konsultasi percuma, balasan dalam satu hari bekerja.
+Let's talk cloud. Free consultation with a local team.|||Mari berbincang tentang awan. Konsultasi percuma bersama pasukan tempatan.
+
+# ---------- Home ----------
+Cloud reseller · Made in Malaysia|||Penjual semula awan · Buatan Malaysia
+Keep every cloud|||Pastikan setiap awan
+in orbit.|||kekal dalam orbit.
+AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud and BytePlus, all set up, billed and looked after by one Malaysian team. Your cloud revolves around your business, not the other way round.|||AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud dan BytePlus, semuanya disediakan, dibilkan dan dijaga oleh satu pasukan Malaysia. Awan anda berputar mengelilingi perniagaan anda, bukan sebaliknya.
+Start a conversation|||Mulakan perbualan
+See what we handle|||Lihat apa yang kami uruskan
+The six cloud platforms Lunex supports|||Enam platform awan yang disokong oleh Lunex
+Lunex highlights|||Kelebihan Lunex
+Pay in your currency|||Bayar dalam mata wang anda
+One invoice, six clouds|||Satu invois, enam awan
+Pay by bank transfer|||Bayar melalui pindahan bank
+Engineers in your time zone|||Jurutera dalam zon waktu anda
+Vendor-neutral advice|||Nasihat neutral tanpa memihak
+No credit-card limits|||Tiada had kad kredit
+What we handle|||Apa yang kami uruskan
+Six jobs you can|||Enam tugas yang boleh
+take off your list.|||anda serahkan kepada kami.
+Pick one to see what's included. Use as many or as few as you need. Each one works on any of the six clouds.|||Pilih satu untuk melihat apa yang termasuk. Gunakan sebanyak atau sesedikit yang anda perlukan. Setiap satu berfungsi pada mana-mana enam awan.
+Lunex services|||Perkhidmatan Lunex
+Account setup|||Persediaan akaun
+Billing &amp; currencies|||Pengebilan &amp; mata wang
+Architecture advice|||Nasihat seni bina
+Migration|||Migrasi
+Cost &amp; security guard|||Kawalan kos &amp; keselamatan
+Human support|||Sokongan manusia
+Get the right account, opened properly.|||Dapatkan akaun yang betul, dibuka dengan sempurna.
+We open new accounts on any of the six clouds under our partner programmes, or move your existing accounts under Lunex. Either way, they start with sensible permissions and security settings.|||Kami membuka akaun baharu di mana-mana enam awan di bawah program rakan kongsi kami, atau memindahkan akaun sedia ada anda ke bawah Lunex. Walau apa pun, akaun anda bermula dengan kebenaran dan tetapan keselamatan yang wajar.
+Included|||Termasuk
+New or transferred accounts|||Akaun baharu atau dipindahkan
+User &amp; role setup|||Persediaan pengguna &amp; peranan
+Security baseline|||Asas keselamatan
+Customer discounts|||Diskaun pelanggan
+Good for:|||Sesuai untuk:
+teams trying a new cloud, or anyone whose sign-up got stuck on verification.|||pasukan yang mencuba awan baharu, atau sesiapa yang pendaftarannya tersekat semasa pengesahan.
+See full details|||Lihat butiran penuh
+One bill. Your currency. Paid your way.|||Satu bil. Mata wang anda. Bayar cara anda.
+Usage from every cloud you use is combined into one monthly invoice. Settle it in Ringgit, US dollars or another currency we support, by bank transfer. No credit-card limits stopping your servers.|||Penggunaan daripada setiap awan yang anda guna digabungkan dalam satu invois bulanan. Jelaskan dalam Ringgit, dolar AS atau mata wang lain yang kami sokong, melalui pindahan bank. Tiada had kad kredit yang menghentikan pelayan anda.
+One consolidated invoice|||Satu invois gabungan
+Multi-currency settlement|||Penyelesaian pelbagai mata wang
+Bank transfer &amp; top-up|||Pindahan bank &amp; tambah nilai
+Monthly spend report|||Laporan perbelanjaan bulanan
+Budget alerts|||Amaran bajet
+finance teams that need proper local invoices and one place to see cloud spend.|||pasukan kewangan yang memerlukan invois tempatan yang sah dan satu tempat untuk melihat perbelanjaan awan.
+Choose with facts, not sales pitches.|||Pilih berdasarkan fakta, bukan promosi jualan.
+We work with all six providers, so we have no reason to push one. Tell us about your workload, users and budget, and we'll design a setup that fits, even if that means mixing clouds.|||Kami bekerjasama dengan keenam-enam penyedia, jadi kami tiada sebab untuk mengutamakan satu. Beritahu kami tentang beban kerja, pengguna dan bajet anda, dan kami akan mereka bentuk persediaan yang sesuai, walaupun ia bermakna menggabungkan beberapa awan.
+Workload review|||Semakan beban kerja
+Cloud &amp; region comparison|||Perbandingan awan &amp; rantau
+Architecture diagram|||Rajah seni bina
+Cost estimate|||Anggaran kos
+new products, expansions into new markets, or "are we on the right cloud?" questions.|||produk baharu, pengembangan ke pasaran baharu, atau persoalan "adakah kami di awan yang betul?".
+Move house, carefully planned.|||Berpindah rumah, dirancang dengan teliti.
+From office servers to the cloud, or from one cloud to another. We plan the move, test it on a copy first, and switch over at a time that suits your business.|||Daripada pelayan pejabat ke awan, atau dari satu awan ke awan lain. Kami merancang perpindahan, mengujinya pada salinan terlebih dahulu, dan bertukar pada masa yang sesuai untuk perniagaan anda.
+Migration plan|||Pelan migrasi
+Test run|||Larian ujian
+Data &amp; app transfer|||Pemindahan data &amp; aplikasi
+Cut-over support|||Sokongan semasa pertukaran
+companies leaving ageing hardware, or moving to a cloud that's cheaper or closer to their users.|||syarikat yang meninggalkan perkakasan lama, atau berpindah ke awan yang lebih murah atau lebih dekat dengan pengguna mereka.
+No surprise bills. No open doors.|||Tiada bil mengejut. Tiada pintu terbuka.
+We review your accounts regularly for wasted spend and common security gaps, such as idle servers, public storage and missing backups, and tell you in plain language what to fix.|||Kami menyemak akaun anda secara berkala untuk perbelanjaan yang membazir dan kelemahan keselamatan biasa, seperti pelayan terbiar, storan awam dan sandaran yang tiada, dan memberitahu anda dalam bahasa mudah apa yang perlu dibaiki.
+Cost review|||Semakan kos
+Right-sizing tips|||Tip saiz yang tepat
+Security check-up|||Pemeriksaan keselamatan
+Backup review|||Semakan sandaran
+businesses whose cloud bill keeps growing and nobody is sure why.|||perniagaan yang bil awannya terus meningkat dan tiada siapa pasti sebabnya.
+A real person who already knows your setup.|||Orang sebenar yang sudah mengenali persediaan anda.
+Skip the global ticket queue. Message our local team in your time zone. If the problem is on the provider's side, we escalate it for you through our partner channel.|||Langkau barisan tiket global. Hantar mesej kepada pasukan tempatan kami dalam zon waktu anda. Jika masalah berpunca daripada pihak penyedia, kami akan memanjangkannya untuk anda melalui saluran rakan kongsi kami.
+Email, WhatsApp, Telegram &amp; more|||E-mel, WhatsApp, Telegram &amp; lain-lain
+Provider escalation|||Eskalasi kepada penyedia
+Incident help|||Bantuan insiden
+Account manager|||Pengurus akaun
+small teams without a full-time cloud engineer.|||pasukan kecil tanpa jurutera awan sepenuh masa.
+Direct vs. Lunex|||Terus vs. Lunex
+Same clouds. Less friction.|||Awan yang sama. Kurang kerumitan.
+You get the same platforms and prices you'd get going direct. What changes is everything around them.|||Anda mendapat platform dan harga yang sama seperti membeli terus. Yang berubah ialah segala-galanya di sekelilingnya.
+Buying cloud directly compared with buying through Lunex|||Membeli awan secara terus berbanding membeli melalui Lunex
+Going direct|||Membeli terus
+With Lunex|||Bersama Lunex
+Currency|||Mata wang
+Usually USD|||Biasanya USD
+MYR, USD &amp; more|||MYR, USD &amp; lain-lain
+Payment|||Pembayaran
+Credit card, with limits|||Kad kredit, dengan had
+Local bank transfer|||Pindahan bank tempatan
+Invoices|||Invois
+One per provider|||Satu bagi setiap penyedia
+One for every cloud|||Satu untuk semua awan
+Support|||Sokongan
+Global ticket queue|||Barisan tiket global
+Local team, your time zone|||Pasukan tempatan, zon waktu anda
+Advice|||Nasihat
+Each recommends itself|||Masing-masing mengesyorkan diri sendiri
+Neutral across all six|||Neutral untuk keenam-enamnya
+Cost reviews|||Semakan kos
+Do it yourself|||Buat sendiri
+Done with you, regularly|||Dibuat bersama anda, secara berkala
+Working together|||Bekerjasama
+Every project follows|||Setiap projek mengikut
+the phases of the moon.|||fasa-fasa bulan.
+New moon|||Bulan baru
+Listen|||Mendengar
+A free call to understand what you run today, what's frustrating you, and where you want to go.|||Panggilan percuma untuk memahami apa yang anda jalankan hari ini, apa yang menyusahkan anda, dan ke mana anda mahu pergi.
+Crescent|||Bulan sabit
+Plan|||Merancang
+We recommend the right cloud setup and send a clear proposal with costs in your preferred currency.|||Kami mengesyorkan persediaan awan yang tepat dan menghantar cadangan yang jelas dengan kos dalam mata wang pilihan anda.
+First quarter|||Suku pertama
+Build|||Membina
+We open or transfer your accounts, then migrate your workloads safely, testing on a copy first.|||Kami membuka atau memindahkan akaun anda, kemudian memindahkan beban kerja anda dengan selamat, dengan menguji pada salinan terlebih dahulu.
+Full moon|||Bulan purnama
+Run|||Menjalankan
+One invoice each month, regular cost reviews, and a team you can reach whenever you need us.|||Satu invois setiap bulan, semakan kos berkala, dan pasukan yang boleh anda hubungi bila-bila masa anda perlukan kami.
+We don't build clouds.|||Kami tidak membina awan.
+We make the six best ones feel like one:|||Kami menjadikan enam awan terbaik terasa seperti satu:
+billed in the currency you earn in, supported by people who reply, and advised by a team with|||dibilkan dalam mata wang pendapatan anda, disokong oleh orang yang benar-benar membalas, dan dinasihati oleh pasukan yang
+nothing to upsell.|||tidak berniat menjual lebih.
+The Lunex team · Malaysia|||Pasukan Lunex · Malaysia
+Say hello|||Tegur kami
+Let's talk cloud.|||Mari berbincang tentang awan.
+Tell us what you're running. We'll reply within one business day with honest next steps, even if that's "you're fine as you are".|||Beritahu kami apa yang anda jalankan. Kami akan membalas dalam satu hari bekerja dengan langkah seterusnya yang jujur, walaupun jawapannya "persediaan anda sudah baik".
+Send us a message|||Hantar mesej kepada kami
+
+# ---------- Services ----------
+Everything around your cloud,|||Segala-galanya tentang awan anda,
+handled.|||kami uruskan.
+The cloud providers give you the servers. Lunex takes care of the rest: accounts, bills, design, moves, check-ups and the people you call when something breaks.|||Penyedia awan memberi anda pelayan. Lunex menguruskan selebihnya: akaun, bil, reka bentuk, perpindahan, pemeriksaan dan orang yang anda hubungi apabila berlaku masalah.
+Jump to a service|||Pergi ke perkhidmatan
+Cost &amp; security|||Kos &amp; keselamatan
+Our clouds|||Awan kami
+Cloud matchmaker|||Pencari padanan awan
+Not sure which cloud fits? Ask the moon.|||Tidak pasti awan mana yang sesuai? Tanya bulan.
+Answer three quick questions and we'll suggest where to start. Each answer fills in a bit more of the moon.|||Jawab tiga soalan ringkas dan kami akan mencadangkan tempat untuk bermula. Setiap jawapan mengisi sedikit lagi bulan.
+Question 1 of 3|||Soalan 1 daripada 3
+What are you building?|||Apa yang anda bina?
+Website or online store|||Laman web atau kedai dalam talian
+Company site, e-commerce, booking|||Laman syarikat, e-dagang, tempahan
+Game or live app|||Permainan atau aplikasi langsung
+Streaming, chat, multiplayer|||Penstriman, sembang, berbilang pemain
+Data or AI project|||Projek data atau AI
+Analytics, dashboards, machine learning|||Analitik, papan pemuka, pembelajaran mesin
+Business systems|||Sistem perniagaan
+ERP, internal tools, file servers|||ERP, alat dalaman, pelayan fail
+Question 2 of 3|||Soalan 2 daripada 3
+Where are most of your users?|||Di manakah kebanyakan pengguna anda?
+Malaysia &amp; Southeast Asia|||Malaysia &amp; Asia Tenggara
+Local and regional customers|||Pelanggan tempatan dan serantau
+Mainland Chinese users|||Pengguna di tanah besar China
+All over the world|||Di seluruh dunia
+Global audience|||Khalayak global
+Question 3 of 3|||Soalan 3 daripada 3
+What matters most to you?|||Apa yang paling penting bagi anda?
+Keeping costs low|||Mengekalkan kos yang rendah
+Best value for the budget|||Nilai terbaik untuk bajet
+Easy to manage|||Mudah diurus
+Small team, simple setup|||Pasukan kecil, persediaan mudah
+Specific technology|||Teknologi khusus
+AI, video, special services|||AI, video, perkhidmatan khas
+Works with our own servers|||Berfungsi dengan pelayan kami sendiri
+Hybrid setup or strict rules|||Persediaan hibrid atau peraturan ketat
+&larr; Back|||&larr; Kembali
+a website or online store|||laman web atau kedai dalam talian
+a game or live app|||permainan atau aplikasi langsung
+a data or AI project|||projek data atau AI
+your business systems|||sistem perniagaan anda
+in Malaysia and Southeast Asia|||di Malaysia dan Asia Tenggara
+in China|||di China
+all over the world|||di seluruh dunia
+cost|||kos
+ease|||kemudahan
+features|||ciri-ciri
+hybrid|||hibrid
+On this page|||Dalam halaman ini
+Services index|||Indeks perkhidmatan
+Account setup &amp; transfer|||Persediaan &amp; pemindahan akaun
+Opening a cloud account sounds simple until verification stalls, the wrong person ends up as the owner, or everyone shares one admin login. We open new accounts under our partner programmes, or move your existing ones under Lunex, and set them up properly from day one.|||Membuka akaun awan kedengaran mudah sehingga pengesahan tersekat, orang yang salah menjadi pemilik, atau semua orang berkongsi satu log masuk pentadbir. Kami membuka akaun baharu di bawah program rakan kongsi kami, atau memindahkan akaun sedia ada anda ke bawah Lunex, dan menyediakannya dengan betul dari hari pertama.
+What you get|||Apa yang anda dapat
+New accounts on any of the six clouds|||Akaun baharu di mana-mana enam awan
+Separate logins and roles for each team member|||Log masuk dan peranan berasingan untuk setiap ahli pasukan
+Security baseline: MFA, alerts and audit logging|||Asas keselamatan: MFA, amaran dan log audit
+Customer discounts to help lower your cloud costs|||Diskaun pelanggan untuk membantu mengurangkan kos awan anda
+How it runs|||Bagaimana ia berjalan
+Tell us who needs access|||Beritahu kami siapa yang perlukan akses
+Company details and your team list.|||Butiran syarikat dan senarai pasukan anda.
+We open or transfer|||Kami buka atau pindahkan
+We handle the provider's paperwork and checks.|||Kami uruskan dokumen dan semakan pihak penyedia.
+Hand-over|||Penyerahan
+You get the logins, plus a short guide on who can do what.|||Anda menerima log masuk, berserta panduan ringkas tentang siapa boleh buat apa.
+Ask us about account setup|||Tanya kami tentang persediaan akaun
+Billing &amp; top-up in your currency|||Pengebilan &amp; tambah nilai dalam mata wang anda
+Global providers usually bill in US dollars on a credit card. That means exchange-rate swings, card limits, and services paused when a payment fails. With Lunex, every cloud you use is combined into one invoice that you can settle in Ringgit or in the currency that works best for your business.|||Penyedia global biasanya mengebil dalam dolar AS melalui kad kredit. Ini bermakna turun naik kadar pertukaran, had kad, dan perkhidmatan tergendala apabila pembayaran gagal. Dengan Lunex, setiap awan yang anda guna digabungkan dalam satu invois yang boleh anda jelaskan dalam Ringgit atau mata wang yang paling sesuai untuk perniagaan anda.
+One monthly invoice covering every cloud|||Satu invois bulanan merangkumi semua awan
+Settle in MYR, USD or other supported currencies|||Jelaskan dalam MYR, USD atau mata wang lain yang disokong
+Payment by bank transfer|||Pembayaran melalui pindahan bank
+Prepaid top-up option for tighter budgets|||Pilihan tambah nilai prabayar untuk bajet yang lebih ketat
+Monthly spend report, broken down by project|||Laporan perbelanjaan bulanan, dipecahkan mengikut projek
+Budget alerts before costs run over|||Amaran bajet sebelum kos melebihi had
+Link your accounts|||Pautkan akaun anda
+Your cloud accounts are billed through Lunex.|||Akaun awan anda dibilkan melalui Lunex.
+Use as normal|||Guna seperti biasa
+Nothing changes for your engineers.|||Tiada apa yang berubah untuk jurutera anda.
+Pay one invoice|||Bayar satu invois
+In your preferred currency each month, with a clear usage report.|||Dalam mata wang pilihan anda setiap bulan, dengan laporan penggunaan yang jelas.
+Ask us about billing &amp; currencies|||Tanya kami tentang pengebilan &amp; mata wang
+Each provider will tell you its own cloud is best. We work with all six, so our only goal is a setup that suits your workload, your users and your budget, even if that means mixing more than one cloud.|||Setiap penyedia akan memberitahu anda awannya yang terbaik. Kami bekerjasama dengan keenam-enamnya, jadi matlamat kami hanyalah persediaan yang sesuai dengan beban kerja, pengguna dan bajet anda, walaupun ia bermakna menggabungkan lebih daripada satu awan.
+Review of your current setup or new idea|||Semakan persediaan semasa atau idea baharu anda
+Side-by-side comparison of suitable clouds and regions|||Perbandingan bersebelahan awan dan rantau yang sesuai
+Architecture diagram you can share with your team|||Rajah seni bina yang boleh dikongsi dengan pasukan anda
+Monthly cost estimate in your preferred currency|||Anggaran kos bulanan dalam mata wang pilihan anda
+Recommendations for scaling, backups and uptime|||Cadangan untuk penskalaan, sandaran dan masa operasi
+Discovery session|||Sesi penerokaan
+We learn what you're building and for whom.|||Kami memahami apa yang anda bina dan untuk siapa.
+Options &amp; trade-offs|||Pilihan &amp; pertimbangan
+We show you two or three paths, with honest pros and cons.|||Kami tunjukkan dua atau tiga pilihan, dengan kebaikan dan keburukan yang jujur.
+Final design|||Reka bentuk akhir
+A clear plan you can build yourself, or have us help with.|||Pelan yang jelas untuk anda bina sendiri, atau dengan bantuan kami.
+Ask us for architecture advice|||Dapatkan nasihat seni bina daripada kami
+Moving from office servers to the cloud, or from one cloud to another, is like moving house: most of the risk is in the planning. We map everything first, rehearse on a copy, and switch over when it suits your business.|||Berpindah daripada pelayan pejabat ke awan, atau dari satu awan ke awan lain, sama seperti berpindah rumah: kebanyakan risiko terletak pada perancangan. Kami memetakan segala-galanya dahulu, berlatih pada salinan, dan bertukar apabila sesuai untuk perniagaan anda.
+Inventory of servers, databases and dependencies|||Inventori pelayan, pangkalan data dan kebergantungan
+Step-by-step migration and rollback plan|||Pelan migrasi dan pemulihan langkah demi langkah
+Test migration before the real one|||Migrasi ujian sebelum yang sebenar
+Data and application transfer|||Pemindahan data dan aplikasi
+Support during and after the switch-over|||Sokongan semasa dan selepas pertukaran
+Assess|||Menilai
+What moves, what stays and what gets replaced.|||Apa yang dipindahkan, apa yang kekal dan apa yang diganti.
+Rehearse|||Berlatih
+A full test run on a copy of your system.|||Larian ujian penuh pada salinan sistem anda.
+Switch over|||Bertukar
+Planned around your quietest hours.|||Dirancang pada waktu paling lengang anda.
+Ask us about migration|||Tanya kami tentang migrasi
+Cost &amp; security check-ups|||Pemeriksaan kos &amp; keselamatan
+Cloud bills tend to grow quietly, and small settings left open can turn into big problems. We review your accounts regularly and explain what we find in plain language, ranked by what matters most.|||Bil awan cenderung meningkat secara senyap, dan tetapan kecil yang dibiarkan terbuka boleh menjadi masalah besar. Kami menyemak akaun anda secara berkala dan menerangkan penemuan kami dalam bahasa mudah, disusun mengikut keutamaan.
+Idle and oversized resources flagged|||Sumber terbiar dan bersaiz berlebihan dikenal pasti
+Savings options such as reserved capacity and right-sizing|||Pilihan penjimatan seperti kapasiti tempahan dan saiz yang tepat
+Checks for public storage, open ports and weak access|||Semakan storan awam, port terbuka dan akses yang lemah
+Backup and recovery review|||Semakan sandaran dan pemulihan
+Short written report with a prioritised to-do list|||Laporan bertulis ringkas dengan senarai tugasan mengikut keutamaan
+Read-only access|||Akses baca sahaja
+We look, and change nothing without your approval.|||Kami melihat, dan tidak mengubah apa-apa tanpa kelulusan anda.
+Review|||Semakan
+Cost and security checks across your accounts.|||Semakan kos dan keselamatan merentasi akaun anda.
+Walk-through|||Penerangan
+A call to go through the findings, then we help fix them if you want.|||Panggilan untuk meneliti penemuan, kemudian kami bantu membaikinya jika anda mahu.
+Book a cost &amp; security check-up|||Tempah pemeriksaan kos &amp; keselamatan
+Local technical support|||Sokongan teknikal tempatan
+When something goes wrong, you want someone who already knows your setup, not a ticket number. Message our team directly. If the problem is on the provider's side, we escalate it through our partner channel and keep you updated.|||Apabila berlaku masalah, anda mahukan seseorang yang sudah mengenali persediaan anda, bukan nombor tiket. Hantar mesej terus kepada pasukan kami. Jika masalah berpunca daripada pihak penyedia, kami akan memanjangkannya melalui saluran rakan kongsi kami dan sentiasa memaklumkan anda.
+Support on the channel you prefer: email, WhatsApp, Telegram and more|||Sokongan melalui saluran pilihan anda: e-mel, WhatsApp, Telegram dan lain-lain
+A named account manager|||Pengurus akaun khusus
+Escalation to the cloud provider on your behalf|||Eskalasi kepada penyedia awan bagi pihak anda
+Help during incidents and outages|||Bantuan semasa insiden dan gangguan
+Advice on everyday "how do I…" questions|||Nasihat untuk soalan harian "bagaimana saya…"
+Reach out|||Hubungi kami
+Message the channel you prefer.|||Hantar mesej melalui saluran pilihan anda.
+We investigate|||Kami menyiasat
+Using what we already know about your setup.|||Menggunakan apa yang kami sudah tahu tentang persediaan anda.
+Resolve or escalate|||Selesaikan atau panjangkan
+Fixed by us, or pushed to the provider with full context.|||Dibaiki oleh kami, atau dipanjangkan kepada penyedia dengan konteks penuh.
+Get support from our team|||Dapatkan sokongan daripada pasukan kami
+Chat on WhatsApp / Telegram|||Berbual di WhatsApp / Telegram
+Six platforms, each with|||Enam platform, masing-masing
+its own strengths.|||dengan kekuatan tersendiri.
+Every service above works on all six. Here's where each cloud tends to shine. We'll help you pick one, or combine several.|||Setiap perkhidmatan di atas berfungsi pada keenam-enamnya. Inilah kekuatan utama setiap awan. Kami akan membantu anda memilih satu, atau menggabungkan beberapa.
+The broadest catalogue of services|||Katalog perkhidmatan yang paling luas
+A mature, wide-ranging platform with a service for almost every need, from simple websites to large enterprise systems.|||Platform matang dan menyeluruh dengan perkhidmatan untuk hampir setiap keperluan, daripada laman web ringkas hingga sistem perusahaan yang besar.
+Web &amp; apps|||Web &amp; aplikasi
+Enterprise|||Perusahaan
+Startups|||Syarikat permulaan
+Talk to us about AWS|||Bincang dengan kami tentang AWS
+Data, analytics &amp; AI|||Data, analitik &amp; AI
+Strong at handling large amounts of data and at machine learning, with tools that work well alongside Google Workspace.|||Hebat dalam mengendalikan data berskala besar dan pembelajaran mesin, dengan alat yang serasi dengan Google Workspace.
+Analytics|||Analitik
+Containers|||Kontena
+Talk to us about Google Cloud|||Bincang dengan kami tentang Google Cloud
+Asia &amp; China connectivity|||Ketersambungan Asia &amp; China
+A leading choice for businesses serving users in Asia, especially those that need to reach or operate in China.|||Pilihan utama bagi perniagaan yang melayani pengguna di Asia, terutamanya yang perlu menjangkau atau beroperasi di China.
+E-commerce|||E-dagang
+China reach|||Jangkauan China
+Talk to us about Alibaba Cloud|||Bincang dengan kami tentang Alibaba Cloud
+Gaming, media &amp; real-time|||Permainan, media &amp; masa nyata
+Built on experience running large games and social apps. Well suited to live streaming, video and real-time communication.|||Dibina berdasarkan pengalaman menjalankan permainan dan aplikasi sosial berskala besar. Sangat sesuai untuk penstriman langsung, video dan komunikasi masa nyata.
+Gaming|||Permainan
+Live video|||Video langsung
+Real-time chat|||Sembang masa nyata
+Talk to us about Tencent Cloud|||Bincang dengan kami tentang Tencent Cloud
+Enterprise &amp; hybrid|||Perusahaan &amp; hibrid
+Popular with enterprises and the public sector that need hybrid setups combining their own data centres with the cloud.|||Popular dalam kalangan perusahaan dan sektor awam yang memerlukan persediaan hibrid, menggabungkan pusat data sendiri dengan awan.
+Hybrid cloud|||Awan hibrid
+Public sector|||Sektor awam
+Talk to us about Huawei Cloud|||Bincang dengan kami tentang Huawei Cloud
+Recommendation &amp; media tech|||Teknologi cadangan &amp; media
+Brings ByteDance's technology to businesses: personalised recommendations, video tools and AI for consumer apps.|||Membawa teknologi ByteDance kepada perniagaan: cadangan diperibadikan, alat video dan AI untuk aplikasi pengguna.
+Recommendations|||Cadangan
+Consumer apps|||Aplikasi pengguna
+Talk to us about BytePlus|||Bincang dengan kami tentang BytePlus
+AWS logo|||Logo AWS
+Google Cloud logo|||Logo Google Cloud
+Alibaba Cloud logo|||Logo Alibaba Cloud
+Tencent Cloud logo|||Logo Tencent Cloud
+Huawei Cloud logo|||Logo Huawei Cloud
+BytePlus logo|||Logo BytePlus
+Good questions|||Soalan lazim
+Asked often, answered plainly.|||Sering ditanya, dijawab dengan jelas.
+Is it more expensive than buying direct?|||Adakah ia lebih mahal daripada membeli terus?
+You pay for cloud usage based on the provider's own pricing. Any Lunex service fees are listed clearly in your quote before you commit, so there are no hidden charges.|||Anda membayar penggunaan awan berdasarkan harga penyedia itu sendiri. Sebarang yuran perkhidmatan Lunex dinyatakan dengan jelas dalam sebut harga anda sebelum anda bersetuju, jadi tiada caj tersembunyi.
+Can you take over the cloud accounts we already have?|||Bolehkah anda mengambil alih akaun awan yang kami sudah ada?
+Yes. In most cases existing accounts can be moved under Lunex for billing and support without changing your servers, data or settings. We plan every transfer with you so any disruption is kept to a minimum.|||Ya. Dalam kebanyakan kes, akaun sedia ada boleh dipindahkan ke bawah Lunex untuk pengebilan dan sokongan tanpa mengubah pelayan, data atau tetapan anda. Kami merancang setiap pemindahan bersama anda supaya sebarang gangguan dapat dikurangkan.
+Do we have to use all six clouds?|||Adakah kami perlu menggunakan keenam-enam awan?
+Not at all. Most customers use one or two. Having all six available simply means we can recommend whatever fits best, and add another later if your needs change.|||Sama sekali tidak. Kebanyakan pelanggan menggunakan satu atau dua. Dengan keenam-enamnya tersedia, kami boleh mengesyorkan yang paling sesuai, dan menambah yang lain kemudian jika keperluan anda berubah.
+Who owns our data and accounts?|||Siapakah pemilik data dan akaun kami?
+You do. Lunex handles billing and helps manage your accounts, but your data, applications and settings always belong to you.|||Anda. Lunex menguruskan pengebilan dan membantu mengurus akaun anda, tetapi data, aplikasi dan tetapan anda sentiasa milik anda.
+Is there a minimum spend?|||Adakah perbelanjaan minimum?
+Talking to us costs nothing. Some services or provider programmes have their own requirements, and we'll tell you about any of them up front, before you sign anything.|||Berbincang dengan kami adalah percuma. Sesetengah perkhidmatan atau program penyedia mempunyai syarat tersendiri, dan kami akan memaklumkannya lebih awal, sebelum anda menandatangani apa-apa.
+How do we reach support?|||Bagaimana kami boleh menghubungi sokongan?
+On whichever channel suits your team, including email, WhatsApp and Telegram, straight to our Malaysian team. You'll also have a named account manager who knows your setup.|||Melalui saluran yang sesuai dengan pasukan anda, termasuk e-mel, WhatsApp dan Telegram, terus kepada pasukan Malaysia kami. Anda juga akan mempunyai pengurus akaun khusus yang mengenali persediaan anda.
+Not sure which service you need?|||Tidak pasti perkhidmatan mana yang anda perlukan?
+Tell us what's going on with your cloud. We'll point you to the right place, even if that's nowhere.|||Ceritakan kepada kami tentang awan anda. Kami akan tunjukkan arah yang betul, walaupun jawapannya anda tidak perlukan apa-apa.
+Get a free consultation|||Dapatkan konsultasi percuma
+
+# ---------- About ----------
+About Lunex|||Tentang Lunex
+Named after the moon.|||Dinamakan sempena bulan.
+Built for the cloud.|||Dibina untuk awan.
+We're a Malaysian company with one simple job: making the world's biggest cloud platforms feel local, easy and fairly priced for the businesses that use them.|||Kami syarikat Malaysia dengan satu tugas mudah: menjadikan platform awan terbesar dunia terasa tempatan, mudah dan berpatutan bagi perniagaan yang menggunakannya.
+The cloud is global.|||Awan bersifat global.
+The help you get with it shouldn't feel far away.|||Bantuan yang anda terima tidak sepatutnya terasa jauh.
+Every year more Malaysian businesses move onto AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud and BytePlus. The technology is excellent. The experience around it often isn't: bills in foreign currency, card payments that fail at the worst moment, and support queues on the other side of the world.|||Setiap tahun, semakin banyak perniagaan Malaysia beralih ke AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud dan BytePlus. Teknologinya cemerlang. Pengalaman di sekelilingnya pula selalunya tidak: bil dalam mata wang asing, bayaran kad yang gagal pada saat yang paling tidak sesuai, dan barisan sokongan di hujung dunia.
+Lunex was founded in 2026 to close that gap. We partner with all six platforms so we can give honest, vendor-neutral advice, then take care of the accounts, invoices and support, locally and in your time zone.|||Lunex diasaskan pada 2026 untuk merapatkan jurang itu. Kami bekerjasama dengan keenam-enam platform supaya dapat memberi nasihat yang jujur dan neutral, kemudian menguruskan akaun, invois dan sokongan, secara tempatan dan dalam zon waktu anda.
+We're small on purpose. You deal with the same people from the first call onwards, and they know your setup.|||Kami sengaja kekal kecil. Anda berurusan dengan orang yang sama dari panggilan pertama, dan mereka mengenali persediaan anda.
+Luna plus nexus makes Lunex. Click to replay.|||Luna tambah nexus menjadi Lunex. Klik untuk ulang semula.
+Tap the name to replay|||Ketik nama untuk ulang semula
+(the moon), always in orbit, plus|||(bulan), sentiasa dalam orbit, ditambah
+(a connection point). One partner connecting you to every cloud.|||(titik penghubung). Satu rakan kongsi yang menghubungkan anda dengan setiap awan.
+Our mission|||Misi kami
+To make world-class cloud platforms simple to buy, pay for and run, for every business in Malaysia, whatever its size.|||Menjadikan platform awan bertaraf dunia mudah dibeli, dibayar dan dijalankan oleh setiap perniagaan di Malaysia, tanpa mengira saiznya.
+Our vision|||Visi kami
+To be the most trusted multi-cloud partner in Southeast Asia: the first call a business makes when it thinks "cloud".|||Menjadi rakan kongsi pelbagai awan yang paling dipercayai di Asia Tenggara: pihak pertama yang dihubungi oleh perniagaan apabila memikirkan tentang "awan".
+What guides us|||Prinsip kami
+Four stars we navigate by.|||Empat bintang yang memandu kami.
+Honest over easy|||Jujur, bukan mudah
+We'll tell you when you don't need something, even if it means a smaller sale.|||Kami akan beritahu jika anda tidak memerlukan sesuatu, walaupun itu bermakna jualan yang lebih kecil.
+Neutral by design|||Neutral secara asas
+Six partners, no favourites. We recommend whatever fits your workload and budget.|||Enam rakan kongsi, tiada pilih kasih. Kami mengesyorkan apa sahaja yang sesuai dengan beban kerja dan bajet anda.
+Close to you|||Dekat dengan anda
+Local billing, local people, your time zone. Help that feels next door.|||Pengebilan tempatan, orang tempatan, zon waktu anda. Bantuan yang terasa seperti jiran sebelah.
+Plain language|||Bahasa mudah
+No jargon walls. Clear reports, clear quotes and answers anyone in your team can follow.|||Tiada jargon yang mengelirukan. Laporan yang jelas, sebut harga yang jelas dan jawapan yang mudah difahami oleh sesiapa dalam pasukan anda.
+The facts|||Fakta
+Lunex at a glance.|||Lunex secara ringkas.
+Company|||Syarikat
+Registration|||Pendaftaran
+Founded|||Ditubuhkan
+Based in|||Berpangkalan di
+What we do|||Apa yang kami lakukan
+Multi-cloud reselling, billing, consulting, migration &amp; support|||Penjualan semula pelbagai awan, pengebilan, konsultasi, migrasi &amp; sokongan
+Cloud partners|||Rakan kongsi awan
+AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud, BytePlus|||AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud, BytePlus
+Lunex is based in Malaysia, serves Singapore, Indonesia and Thailand, and is growing into Vietnam, the Philippines and the wider Asia-Pacific region.|||Lunex berpangkalan di Malaysia, melayani Singapura, Indonesia dan Thailand, serta berkembang ke Vietnam, Filipina dan rantau Asia Pasifik yang lebih luas.
+Singapore|||Singapura
+Philippines|||Filipina
+Wider APAC|||Asia Pasifik
+Home base|||Pangkalan utama
+Serving &amp; growing into|||Dilayani &amp; sedang berkembang
+Let's get to know each other.|||Mari berkenalan.
+A short call is the easiest way to see if Lunex is the right fit. No slides, no pressure.|||Panggilan ringkas ialah cara paling mudah untuk melihat sama ada Lunex sesuai untuk anda. Tiada slaid, tiada tekanan.
+Book a call|||Tempah panggilan
+Our services|||Perkhidmatan kami
+
+# ---------- Contact ----------
+Contact us|||Hubungi kami
+Let's talk|||Mari berbincang tentang
+cloud.|||awan.
+Questions, quotes or a quick sense-check of your current setup: send us a note and a real person will reply within one business day.|||Soalan, sebut harga atau semakan pantas persediaan semasa anda: hantar mesej kepada kami dan orang sebenar akan membalas dalam satu hari bekerja.
+Fields marked|||Ruangan bertanda
+are required. Fill them in to fill the moon.|||wajib diisi. Isikan untuk memenuhkan bulan.
+0% in orbit|||0% dalam orbit
+Quick topics|||Topik pantas
+Quick start: what's on your mind?|||Mula pantas: apa yang anda fikirkan?
+Billing &amp; currency|||Pengebilan &amp; mata wang
+Move to the cloud|||Pindah ke awan
+Which cloud?|||Awan yang mana?
+Lower my bill|||Kurangkan bil saya
+I need help now|||Saya perlukan bantuan sekarang
+Full name|||Nama penuh
+Work email|||E-mel kerja
+Phone / WhatsApp|||Telefon / WhatsApp
+Cloud you're interested in|||Awan yang anda minati
+Not sure yet|||Belum pasti
+More than one|||Lebih daripada satu
+What do you need help with?|||Apa yang anda perlukan bantuan?
+Choose one|||Pilih satu
+New account setup|||Persediaan akaun baharu
+Billing &amp; payment / transfer accounts|||Pengebilan &amp; pembayaran / pemindahan akaun
+Cost &amp; security check-up|||Pemeriksaan kos &amp; keselamatan
+Technical support|||Sokongan teknikal
+Something else|||Lain-lain
+Tell us a bit more|||Ceritakan lebih lanjut
+What are you running today, and what would you like to change?|||Apa yang anda jalankan hari ini, dan apa yang anda mahu ubah?
+0 characters|||0 aksara
+Send message|||Hantar mesej
+Pressing "Send message" opens your own email app with your message ready to send to|||Menekan "Hantar mesej" akan membuka aplikasi e-mel anda dengan mesej yang sedia untuk dihantar ke
+. We only use your details to reply to this enquiry, in line with Malaysia's Personal Data Protection Act (PDPA).|||. Kami hanya menggunakan butiran anda untuk membalas pertanyaan ini, selaras dengan Akta Perlindungan Data Peribadi (PDPA) Malaysia.
+Your email app should now be open with your message ready. Just press|||Aplikasi e-mel anda sepatutnya kini terbuka dengan mesej anda yang sedia. Hanya tekan
+Send|||Hantar
+there and we'll reply within one business day. If nothing opened, email us directly at|||di sana dan kami akan membalas dalam satu hari bekerja. Jika tiada apa-apa yang terbuka, e-mel kami terus di
+Current time in Kuala Lumpur|||Waktu semasa di Kuala Lumpur
+Right now at Lunex|||Sekarang di Lunex
+Email|||E-mel
+Best for quotes and detailed questions|||Terbaik untuk sebut harga dan soalan terperinci
+Tap to chat on WhatsApp or Telegram|||Ketik untuk berbual di WhatsApp atau Telegram
+Office|||Pejabat
+Visits by appointment · Open in Google Maps|||Lawatan melalui temu janji · Buka di Google Maps
+Business hours|||Waktu perniagaan
+Mon – Fri, **:** – **:**|||Isn – Jum, **:** – **:**
+Malaysia time (GMT+8)|||Waktu Malaysia (GMT+8)
+What happens next|||Apa yang berlaku seterusnya
+We read your message|||Kami membaca mesej anda
+A real person, not an auto-reply.|||Orang sebenar, bukan balasan automatik.
+We reply within one business day|||Kami membalas dalam satu hari bekerja
+Usually with a few questions, or a time for a call.|||Biasanya dengan beberapa soalan, atau masa untuk panggilan.
+Free consultation|||Konsultasi percuma
+Honest advice, and a quote only if you want one.|||Nasihat yang jujur, dan sebut harga hanya jika anda mahu.
