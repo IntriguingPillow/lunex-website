@@ -499,10 +499,8 @@ a.info__item:hover { border-color: var(--cyan); }
 /* WhatsApp / Telegram chooser */
 .chat { position: relative; z-index: 5; }
 .chat.is-open { z-index: 40; }
-.chat__toggle {
-  width: 100%; align-items: center; text-align: left; cursor: pointer;
-  font: inherit; color: inherit;
-}
+.chat__toggle { cursor: pointer; }
+.info__item.chat__toggle { width: 100%; align-items: center; text-align: left; font: inherit; color: inherit; }
 .chat__toggle:hover, .chat__toggle[aria-expanded="true"] { border-color: var(--cyan); }
 .chat__chev { width: 20px; height: 20px; margin-left: auto; flex: none; color: var(--text-muted); transition: transform .25s, color .25s; }
 .chat__toggle[aria-expanded="true"] .chat__chev { transform: rotate(180deg); color: var(--cyan); }
@@ -537,6 +535,18 @@ a.info__item:hover { border-color: var(--cyan); }
 .chat--footer .chat__toggle small { width: 100%; font-size: .78rem; color: var(--text-muted); }
 .chat--footer .chat__chev { width: 16px; height: 16px; margin-left: 0; }
 .chat--footer .chat__menu { right: auto; min-width: 250px; }
+/* Pill / button variants (Home "Let's talk cloud", Services support) */
+.chat--pill, .chat--btn { display: inline-block; vertical-align: top; text-align: left; }
+.chat--pill .chat__toggle, .chat--btn .chat__toggle { width: auto; }
+.chat--pill .chat__toggle .chat__chev, .chat--btn .chat__toggle .chat__chev { width: 16px; height: 16px; margin-left: 2px; }
+.chat--pill .chat__menu { left: 50%; right: auto; width: 270px; margin-left: -135px; }
+.chat--btn { margin: 18px 0 0 18px; }
+.chat--btn .chat__menu { right: auto; width: 270px; }
+@media (max-width: 640px) {
+  .chat--pill { display: block; }
+  .chat--pill .chat__toggle { width: 100%; justify-content: center; }
+  .chat--btn { display: block; margin: 16px 0 0; }
+}
 .footer__contact .chat__badge svg { color: #fff; margin-top: 0; width: 20px; height: 20px; }
 
 .next { margin-top: 14px; padding: 26px; border-radius: var(--radius); background: linear-gradient(160deg, rgba(76,110,245,.2), rgba(76,110,245,.04)); border: 1px solid rgba(76,110,245,.35); }

@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=6">
   <script>(function(d){try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches){var s=sessionStorage;if(s.getItem("lx-trans"))d.classList.add("page-entering");else if(!s.getItem("lx-intro"))d.classList.add("intro-pending");}}catch(e){}setTimeout(function(){d.classList.remove("page-entering","intro-pending")},3000)})(document.documentElement)</script>
 </head>
 <body>
@@ -288,6 +288,13 @@
               </div>
             </div>
             <a class="inline-link" href="contact.html?topic=Technical%20support">Get support from our team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <div class="chat chat--btn" data-chat>
+              <button class="btn btn--line btn--sm chat__toggle" type="button" aria-expanded="false" aria-controls="chat-menu-support" aria-haspopup="true">Chat on WhatsApp / Telegram<svg class="chat__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+              <div class="chat__menu" id="chat-menu-support" role="menu" aria-label="Choose how to chat" hidden>
+                <a class="chat__opt" role="menuitem" href="https://wa.me/601118791260" target="_blank" rel="noopener"><span class="chat__badge chat__badge--wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M9 9.5c.4 1.8 1.7 3.3 3.5 4l1.2-1.1 1.8.8-.5 1.6c-3.3-.3-6-3-6.3-6.3l1.6-.5.8 1.8Z" fill="currentColor" stroke="none"/></svg></span><span>WhatsApp<small>Chat with us on WhatsApp</small></span></a>
+                <a class="chat__opt" role="menuitem" href="https://t.me/+601118791260" target="_blank" rel="noopener"><span class="chat__badge chat__badge--tg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 3.5 2.5 11l6.5 2.2 2.2 6.8 3.3-4.2 5.5 4 1.5-16.3Z"/><path d="M9 13.2 18 7"/></svg></span><span>Telegram<small>Message us on Telegram</small></span></a>
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -458,6 +465,6 @@
     <div class="footer__word" aria-hidden="true">lunex</div>
   </footer>
 
-  <script src="js/main.js?v=5"></script>
+  <script src="js/main.js?v=6"></script>
 </body>
 </html>
