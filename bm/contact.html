@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ms" data-root="../">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hubungi Kami | Lunex</title>
+  <meta name="description" content="Berbincang dengan Lunex tentang AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud atau BytePlus. Konsultasi percuma, balasan dalam satu hari bekerja.">
+  <meta name="theme-color" content="#0a1430">
+  <meta property="og:title" content="Hubungi Kami | Lunex">
+  <meta property="og:description" content="Mari berbincang tentang awan. Konsultasi percuma bersama pasukan tempatan.">
+  <meta property="og:image" content="../assets/img/lunex-icon-512.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=9">
+  <link rel="alternate" hreflang="en" href="../contact.html">
+  <link rel="alternate" hreflang="ms" href="contact.html">
+  <script>(function(d){try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches){var s=sessionStorage;if(s.getItem("lx-trans"))d.classList.add("page-entering");else if(!s.getItem("lx-intro"))d.classList.add("intro-pending");}}catch(e){}setTimeout(function(){d.classList.remove("page-entering","intro-pending")},3000)})(document.documentElement)</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Langkau ke kandungan</a>
+
+  <!-- ============ Floating header ============ -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="index.html" class="nav__logo" aria-label="Laman utama Lunex">
+          <img src="../assets/img/lunex-logo-white.svg" alt="Lunex" width="99" height="34">
+        </a>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="index.html">Utama</a></li>
+          <li><a class="nav__link" href="services.html">Perkhidmatan</a></li>
+          <li><a class="nav__link" href="about.html">Tentang Kami</a></li>
+          <li class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Hubungi Kami</a></li>
+        </ul>
+        <button class="nav__toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <div class="lang lang--float" role="group" aria-label="Bahasa / Language"><a class="lang__opt" data-lang="en" href="../contact.html" hreflang="en">EN</a><a class="lang__opt is-on" data-lang="ms" href="contact.html" hreflang="ms" aria-current="true">BM</a></div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Page hero ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker reveal">Hubungi kami</p>
+        <h1 class="reveal d1">Mari berbincang tentang <span class="glow-text">awan.</span></h1>
+        <p class="lead reveal d2">Soalan, sebut harga atau semakan pantas persediaan semasa anda: hantar mesej kepada kami dan orang sebenar akan membalas dalam satu hari bekerja.</p>
+      </div>
+    </section>
+
+    <!-- ============ Form + details ============ -->
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="form-card reveal">
+          <div class="form-head">
+            <div>
+              <h2>Hantar mesej kepada kami</h2>
+              <p style="color:var(--text-muted)">Ruangan bertanda <span style="color:var(--cyan)">*</span> wajib diisi. Isikan untuk memenuhkan bulan.</p>
+            </div>
+            <div class="form-moon" data-form-moon aria-hidden="true">
+              <svg class="moon-svg" viewBox="0 0 100 100">
+                <defs><radialGradient id="formMoonLit" cx="60%" cy="35%" r="75%"><stop offset="0" stop-color="#e3e9ff"/><stop offset=".55" stop-color="#91a7ff"/><stop offset="1" stop-color="#4c6ef5"/></radialGradient></defs>
+                <circle class="moon-base" cx="50" cy="50" r="46"/>
+                <path class="moon-lit" fill="url(#formMoonLit)" d=""/>
+              </svg>
+              <small>0% dalam orbit</small>
+            </div>
+          </div>
+
+          <p class="prefill-note" data-prefill-note role="status" hidden></p>
+
+          <div class="quick" role="group" aria-label="Topik pantas">
+            <p class="quick__label">Mula pantas: apa yang anda fikirkan?</p>
+            <button type="button" data-topic="Billing &amp; payment / transfer accounts">Pengebilan &amp; mata wang</button>
+            <button type="button" data-topic="Migration">Pindah ke awan</button>
+            <button type="button" data-topic="Architecture advice">Awan yang mana?</button>
+            <button type="button" data-topic="Cost &amp; security check-up">Kurangkan bil saya</button>
+            <button type="button" data-topic="Technical support">Saya perlukan bantuan sekarang</button>
+          </div>
+
+          <form class="form" data-contact-form data-to="support@lunexsb.com" novalidate>
+            <div class="form__group">
+              <label for="name">Nama penuh <span class="req">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <span class="form__error" data-error-for="name" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="company">Syarikat</label>
+              <input id="company" name="company" type="text" autocomplete="organization">
+              <span class="form__error" data-error-for="company" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="email">E-mel kerja <span class="req">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <span class="form__error" data-error-for="email" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="phone">Telefon / WhatsApp</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+60">
+              <span class="form__error" data-error-for="phone" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="cloud">Awan yang anda minati</label>
+              <select id="cloud" name="cloud">
+                <option value="">Belum pasti</option>
+                <option value="AWS">AWS</option>
+                <option value="Google Cloud">Google Cloud</option>
+                <option value="Alibaba Cloud">Alibaba Cloud</option>
+                <option value="Tencent Cloud">Tencent Cloud</option>
+                <option value="Huawei Cloud">Huawei Cloud</option>
+                <option value="BytePlus">BytePlus</option>
+                <option value="More than one">Lebih daripada satu</option>
+              </select>
+              <span class="form__error" data-error-for="cloud" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="topic">Apa yang anda perlukan bantuan? <span class="req">*</span></label>
+              <select id="topic" name="topic" required>
+                <option value="">Pilih satu</option>
+                <option value="New account setup">Persediaan akaun baharu</option>
+                <option value="Billing &amp; payment / transfer accounts">Pengebilan &amp; pembayaran / pemindahan akaun</option>
+                <option value="Architecture advice">Nasihat seni bina</option>
+                <option value="Migration">Migrasi</option>
+                <option value="Cost &amp; security check-up">Pemeriksaan kos &amp; keselamatan</option>
+                <option value="Technical support">Sokongan teknikal</option>
+                <option value="Something else">Lain-lain</option>
+              </select>
+              <span class="form__error" data-error-for="topic" aria-live="polite"></span>
+            </div>
+            <div class="form__group form__group--full">
+              <label for="message">Ceritakan lebih lanjut <span class="req">*</span></label>
+              <textarea id="message" name="message" required placeholder="Apa yang anda jalankan hari ini, dan apa yang anda mahu ubah?"></textarea>
+              <span class="form__error" data-error-for="message" aria-live="polite"></span>
+              <span class="msg-count" data-msg-count aria-hidden="true">0 aksara</span>
+            </div>
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">
+                Hantar mesej
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </button>
+            </div>
+            <p class="form__note">Menekan "Hantar mesej" akan membuka aplikasi e-mel anda dengan mesej yang sedia untuk dihantar ke <a href="mailto:support@lunexsb.com?subject=Enquiry%20from%20the%20Lunex%20website" style="color:var(--cyan)">support@lunexsb.com</a>. Kami hanya menggunakan butiran anda untuk membalas pertanyaan ini, selaras dengan Akta Perlindungan Data Peribadi (PDPA) Malaysia.</p>
+            <div class="form__success" role="status" tabindex="-1">Aplikasi e-mel anda sepatutnya kini terbuka dengan mesej anda yang sedia. Hanya tekan <strong>Hantar</strong> di sana dan kami akan membalas dalam satu hari bekerja. Jika tiada apa-apa yang terbuka, e-mel kami terus di <a href="mailto:support@lunexsb.com?subject=Enquiry%20from%20the%20Lunex%20website" style="color:inherit;text-decoration:underline">support@lunexsb.com</a>.</div>
+          </form>
+        </div>
+
+        <aside class="info">
+          <div class="sky reveal" data-kl-sky data-period="night" role="img" aria-label="Waktu semasa di Kuala Lumpur">
+            <div class="sky__stars"></div>
+            <div class="sky__arc"></div>
+            <div class="sky__body is-moon" style="left:50%;top:30%"></div>
+            <div class="sky__ground"></div>
+            <span class="sky__label">Sekarang di Lunex</span>
+            <div class="sky__text">
+              <div class="sky__time">--:--</div>
+              <div class="sky__meta">Kuala Lumpur, Malaysia</div>
+            </div>
+          </div>
+          <a data-spotlight class="info__item reveal" href="mailto:support@lunexsb.com?subject=Enquiry%20from%20the%20Lunex%20website">
+            <span class="info__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><h3>E-mel</h3><p>support@lunexsb.com<small>Terbaik untuk sebut harga dan soalan terperinci</small></p></div>
+          </a>
+          <!-- One card, two ways to chat: opens a small menu (WhatsApp / Telegram) -->
+          <div class="chat reveal d1" data-chat>
+            <button data-spotlight class="info__item chat__toggle" type="button" aria-expanded="false" aria-controls="chat-menu" aria-haspopup="true">
+              <span class="info__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+              <div><h3>WhatsApp / Telegram</h3><p>+60 11-1879 1260<small>Ketik untuk berbual di WhatsApp atau Telegram</small></p></div>
+              <svg class="chat__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="chat__menu" id="chat-menu" role="menu" aria-label="Pilih cara untuk berbual" hidden>
+              <a class="chat__opt" role="menuitem" href="https://wa.me/601118791260" target="_blank" rel="noopener">
+                <span class="chat__badge chat__badge--wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M9 9.5c.4 1.8 1.7 3.3 3.5 4l1.2-1.1 1.8.8-.5 1.6c-3.3-.3-6-3-6.3-6.3l1.6-.5.8 1.8Z" fill="currentColor" stroke="none"/></svg></span>
+                <span>WhatsApp<small>Berbual dengan kami di WhatsApp</small></span>
+                <svg class="chat__go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+              <a class="chat__opt" role="menuitem" href="https://t.me/+601118791260" target="_blank" rel="noopener">
+                <span class="chat__badge chat__badge--tg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 3.5 2.5 11l6.5 2.2 2.2 6.8 3.3-4.2 5.5 4 1.5-16.3Z"/><path d="M9 13.2 18 7"/></svg></span>
+                <span>Telegram<small>Hantar mesej kepada kami di Telegram</small></span>
+                <svg class="chat__go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </div>
+          <a data-spotlight class="info__item reveal d2" href="https://www.google.com/maps/search/?api=1&amp;query=5%2C%20Lorong%20Peel%2C%20Maluri%2C%2055100%20Cheras%2C%20Kuala%20Lumpur%2C%20Malaysia" target="_blank" rel="noopener">
+            <span class="info__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><h3>Pejabat</h3><p>5, Lorong Peel, Maluri,<br>55100 Cheras, Wilayah Persekutuan Kuala Lumpur<small>Lawatan melalui temu janji · Buka di Google Maps</small></p></div>
+          </a>
+          <div class="info__item reveal d3">
+            <span class="info__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><h3>Waktu perniagaan</h3><p>Isnin – Jumaat, 9:00 pagi – 6:00 petang<small>Waktu Malaysia (GMT+8)</small></p></div>
+          </div>
+
+          <div class="next reveal">
+            <h3>Apa yang berlaku seterusnya</h3>
+            <ol class="flow">
+              <li><strong>Kami membaca mesej anda</strong><span>Orang sebenar, bukan balasan automatik.</span></li>
+              <li><strong>Kami membalas dalam satu hari bekerja</strong><span>Biasanya dengan beberapa soalan, atau masa untuk panggilan.</span></li>
+              <li><strong>Konsultasi percuma</strong><span>Nasihat yang jujur, dan sebut harga hanya jika anda mahu.</span></li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../assets/img/lunex-logo-white.svg" alt="Lunex" width="104" height="36">
+          <p>Rakan kongsi tempatan anda untuk AWS, Google Cloud, Alibaba Cloud, Tencent Cloud, Huawei Cloud dan BytePlus.</p>
+        </div>
+        <div>
+          <h4>Terokai</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="services.html">Perkhidmatan</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="contact.html">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Awan</h4>
+          <ul class="footer__links">
+            <li><a href="services.html#aws">AWS</a></li>
+            <li><a href="services.html#google-cloud">Google Cloud</a></li>
+            <li><a href="services.html#alibaba-cloud">Alibaba Cloud</a></li>
+            <li><a href="services.html#tencent-cloud">Tencent Cloud</a></li>
+            <li><a href="services.html#huawei-cloud">Huawei Cloud</a></li>
+            <li><a href="services.html#byteplus">BytePlus</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hubungi kami</h4>
+          <ul class="footer__contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:support@lunexsb.com?subject=Enquiry%20from%20the%20Lunex%20website">support@lunexsb.com</a></li>
+            <li class="chat chat--footer" data-chat><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+              <button class="chat__toggle" type="button" aria-expanded="false" aria-controls="chat-menu-footer" aria-haspopup="true">+60 11-1879 1260<svg class="chat__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><small>WhatsApp / Telegram</small></button>
+              <div class="chat__menu" id="chat-menu-footer" role="menu" aria-label="Pilih cara untuk berbual" hidden>
+                <a class="chat__opt" role="menuitem" href="https://wa.me/601118791260" target="_blank" rel="noopener"><span class="chat__badge chat__badge--wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M9 9.5c.4 1.8 1.7 3.3 3.5 4l1.2-1.1 1.8.8-.5 1.6c-3.3-.3-6-3-6.3-6.3l1.6-.5.8 1.8Z" fill="currentColor" stroke="none"/></svg></span><span>WhatsApp<small>Berbual dengan kami di WhatsApp</small></span></a>
+                <a class="chat__opt" role="menuitem" href="https://t.me/+601118791260" target="_blank" rel="noopener"><span class="chat__badge chat__badge--tg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 3.5 2.5 11l6.5 2.2 2.2 6.8 3.3-4.2 5.5 4 1.5-16.3Z"/><path d="M9 13.2 18 7"/></svg></span><span>Telegram<small>Hantar mesej kepada kami di Telegram</small></span></a>
+              </div>
+            </li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=5%2C%20Lorong%20Peel%2C%20Maluri%2C%2055100%20Cheras%2C%20Kuala%20Lumpur%2C%20Malaysia" target="_blank" rel="noopener">5, Lorong Peel, Maluri, 55100 Cheras, Wilayah Persekutuan Kuala Lumpur</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2026</span> Lunex. Hak cipta terpelihara.</span>
+        <span>SSM 202601023276 (1685373-X)</span>
+      </div>
+    </div>
+    <div class="footer__word" aria-hidden="true">lunex</div>
+  </footer>
+
+  <script src="../js/main.js?v=9"></script>
+</body>
+</html>

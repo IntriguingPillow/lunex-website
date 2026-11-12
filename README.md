@@ -24,8 +24,8 @@ start index.html
 
 ## English & Bahasa Melayu
 
-The site has an **EN | MS** switch in the top-right corner. Malay pages live in `ms/`
-and are **generated** from the English pages. Don't edit `ms/*.html` by hand.
+The site has an **EN | BM** switch in the top-right corner. Malay pages live in `bm/`
+and are **generated** from the English pages. Don't edit `bm/*.html` by hand.
 
 1. Edit the English page (e.g. `services.html`).
 2. If you changed or added text, add/update its Malay line in `tools/i18n-ms.txt`

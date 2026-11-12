@@ -1,16 +1,16 @@
-# Builds the Bahasa Melayu pages (ms/*.html) from the English pages.
+# Builds the Bahasa Melayu pages (bm/*.html) from the English pages.
 #
 # Usage (from the project folder):
 #   powershell -ExecutionPolicy Bypass -File tools\build-ms.ps1
 #
-# How it works: each English page is copied to ms/, asset paths get "../",
+# How it works: each English page is copied to bm/, asset paths get "../",
 # the EN | MS switch is flipped, and every text that exactly matches a line in
 # tools\i18n-ms.txt is replaced with its Malay version. Run it again whenever
 # the English pages or the translation file change.
 
 $ErrorActionPreference = 'Stop'
 $root   = Split-Path -Parent $PSScriptRoot
-$outDir = Join-Path $root 'ms'
+$outDir = Join-Path $root 'bm'
 $enc    = New-Object System.Text.UTF8Encoding $false
 $pages  = 'index', 'services', 'about', 'contact'
 
@@ -69,21 +69,21 @@ foreach ($p in $pages) {
   # Restore scripts
   $html = [regex]::Replace($html, '@@SCRIPT(\d+)@@', { param($m) $scripts[[int]$m.Groups[1].Value] })
 
-  # 3) Language + paths for the ms/ folder
+  # 3) Language + paths for the bm/ folder
   $html = $html.Replace('<html lang="en">', '<html lang="ms" data-root="../">')
   foreach ($a in 'href="css/', 'src="js/', 'href="assets/', 'src="assets/', 'content="assets/') {
     $html = $html.Replace($a, $a.Substring(0, $a.Length - 0).Replace('="', '="../'))
   }
   $html = $html.Replace('<link rel="alternate" hreflang="en" href="', '<link rel="alternate" hreflang="en" href="../')
-  $html = $html.Replace('<link rel="alternate" hreflang="ms" href="ms/', '<link rel="alternate" hreflang="ms" href="')
+  $html = $html.Replace('<link rel="alternate" hreflang="ms" href="bm/', '<link rel="alternate" hreflang="ms" href="')
 
   # 4) Flip the EN | MS switch
   $html = [regex]::Replace($html,
-    '<a class="lang__opt is-on" data-lang="en" href="([^"]+)" hreflang="en" aria-current="true">EN</a><a class="lang__opt" data-lang="ms" href="ms/([^"]+)" hreflang="ms">BM</a>',
+    '<a class="lang__opt is-on" data-lang="en" href="([^"]+)" hreflang="en" aria-current="true">EN</a><a class="lang__opt" data-lang="ms" href="bm/([^"]+)" hreflang="ms">BM</a>',
     '<a class="lang__opt" data-lang="en" href="../$1" hreflang="en">EN</a><a class="lang__opt is-on" data-lang="ms" href="$2" hreflang="ms" aria-current="true">BM</a>')
 
   [IO.File]::WriteAllText((Join-Path $outDir "$p.html"), $html, $enc)
-  Write-Host "Built ms/$p.html"
+  Write-Host "Built bm/$p.html"
 }
 
 # ---- Report ----
