@@ -28,7 +28,7 @@ $script:missing = New-Object System.Collections.Generic.List[string]
 
 # Text that is the same in both languages (brand names, places, codes)
 $keep = @('AWS','Google Cloud','Alibaba Cloud','Tencent Cloud','Huawei Cloud','BytePlus','WhatsApp','Telegram',
-  'WhatsApp / Telegram','Lunex','lunex','Lu','na','nex','us','Luna','nexus','EN','MS','China','Video','CDN','AI / ML',
+  'WhatsApp / Telegram','Lunex','lunex','Lu','na','nex','us','Luna','nexus','EN','BM','China','Video','CDN','AI / ML',
   'Malaysia','Indonesia','Thailand','Vietnam','Kuala Lumpur, Malaysia','&copy;','support@lunexsb.com',
   'SSM 202601023276 (1685373-X)','5, Lorong Peel, Maluri,','55100 Cheras, Wilayah Persekutuan Kuala Lumpur',
   '5, Lorong Peel, Maluri, 55100 Cheras, Wilayah Persekutuan Kuala Lumpur','WhatsApp / Telegram +60 11-1879 1260',
@@ -79,8 +79,8 @@ foreach ($p in $pages) {
 
   # 4) Flip the EN | MS switch
   $html = [regex]::Replace($html,
-    '<a class="lang__opt is-on" data-lang="en" href="([^"]+)" hreflang="en" aria-current="true">EN</a><a class="lang__opt" data-lang="ms" href="ms/([^"]+)" hreflang="ms">MS</a>',
-    '<a class="lang__opt" data-lang="en" href="../$1" hreflang="en">EN</a><a class="lang__opt is-on" data-lang="ms" href="$2" hreflang="ms" aria-current="true">MS</a>')
+    '<a class="lang__opt is-on" data-lang="en" href="([^"]+)" hreflang="en" aria-current="true">EN</a><a class="lang__opt" data-lang="ms" href="ms/([^"]+)" hreflang="ms">BM</a>',
+    '<a class="lang__opt" data-lang="en" href="../$1" hreflang="en">EN</a><a class="lang__opt is-on" data-lang="ms" href="$2" hreflang="ms" aria-current="true">BM</a>')
 
   [IO.File]::WriteAllText((Join-Path $outDir "$p.html"), $html, $enc)
   Write-Host "Built ms/$p.html"
