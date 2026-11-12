@@ -9,7 +9,7 @@
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- Language ----------
-     Malay pages live in /ms/ with <html lang="ms" data-root="../">.
+     Malay pages live in /bm/ with <html lang="ms" data-root="../">.
      t(en, ms) picks the right text for script-generated content. */
   var MS = (document.documentElement.lang || "").toLowerCase().indexOf("ms") === 0;
   var ROOT = document.documentElement.getAttribute("data-root") || "";
